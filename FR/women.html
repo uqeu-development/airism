@@ -1,718 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-        href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css" />
-    <link rel="stylesheet"
-        href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css" />
-    <link rel="stylesheet"
-        href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide.css">
-    <link rel="stylesheet"
-        href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide-lg.css"
-        media="(min-width: 1440px)">
-    <script defer=""
-        src="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/js/lib/splide.min.js"
-        type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide-lg.css"
+      media="(min-width: 1440px)"
+    />
+    <script
+      defer=""
+      src="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/js/lib/splide.min.js"
+      type="text/javascript"
+    ></script>
     <link rel="stylesheet" href="../css/airism-styles.css" />
 
     <script type="module">
-        var sliders = document.querySelectorAll("[data-splide]");
-        if (sliders.length) {
-            for (let slider of sliders) {
-                var splide = new Splide(slider);
-                splide.mount();
-            }
+      var sliders = document.querySelectorAll('[data-splide]');
+      if (sliders.length) {
+        for (let slider of sliders) {
+          var splide = new Splide(slider);
+          splide.mount();
         }
+      }
     </script>
     <title>Project name</title>
-</head>
+  </head>
 
-<body>
-
-
-
+  <body>
     <!-- COPY TO SALEFORCE FROM HERE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-    <script defer="" src="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/main.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/fetch-product.css">
+    <script
+      defer=""
+      src="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/main.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/fetch-product.css"
+    />
 
     <div id="container">
-        <!-- START CODING HERE -->
+      <!-- START CODING HERE -->
 
-        <!-- NAV -->
-        <div id="tabs-wrapper">
-            <div class="tab active">
-                <a href="airism-women.html" data-cateogry="airism" data-label="women: women-nav" data-action="click">
-                    <h3>FEMME</h3>
-                </a>
-            </div>
-            <div class="tab">
-                <a href="airism-men.html" data-cateogry="airism" data-label="women: men-nav" data-action="click">
-                    <h3>HOMME</h3>
-                </a>
-            </div>
-            <div class="tab" data-cateogry="airism" data-label="women: kids-nav" data-action="click">
-                <a href="airism-kids.html">
-                    <h3>ENFANT &amp; BÉBÉ</h3>
-                </a>
-            </div>
+      <!-- NAV -->
+      <div id="tabs-wrapper">
+        <div class="tab active">
+          <a
+            href="airism-women.html"
+            data-cateogry="airism"
+            data-label="women: women-nav"
+            data-action="click"
+          >
+            <h3>FEMME</h3>
+          </a>
         </div>
-
-        <h2 class="title">AIRism</h2>
-        <div class="hero">
-            <video muted="" autoplay="" playsinline="" loop="" class="responsive"
-                data-desktop-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/hero-poster.jpg"
-                data-mobile-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/mobile-poster.jpg"
-                data-desktop-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/pc-l1-pickup3-airism-factory-video_1.mp4"
-                data-mobile-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/mb-l1-pickup3-airism-factory-video_1.mp4">
-            </video>
+        <div class="tab">
+          <a
+            href="airism-men.html"
+            data-cateogry="airism"
+            data-label="women: men-nav"
+            data-action="click"
+          >
+            <h3>HOMME</h3>
+          </a>
         </div>
+        <div
+          class="tab"
+          data-cateogry="airism"
+          data-label="women: kids-nav"
+          data-action="click"
+        >
+          <a href="airism-kids.html">
+            <h3>ENFANT &amp; BÉBÉ</h3>
+          </a>
+        </div>
+      </div>
 
-        <!-- NAV WRAPPER -->
-        <div id="nav-wrapper">
-            <a href="#secrets-of" data-category="airism" data-label="nav: what is airism" data-action="click">
-                <h4>Les secrets</h4>
+      <h2 class="title" style="text-transform: initial">AIRism</h2>
+      <div class="hero">
+        <video
+          muted=""
+          autoplay=""
+          playsinline=""
+          loop=""
+          class="responsive"
+          data-desktop-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/hero-poster.jpg"
+          data-mobile-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/mobile-poster.jpg"
+          data-desktop-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/pc-l1-pickup3-airism-factory-video_1.mp4"
+          data-mobile-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/mb-l1-pickup3-airism-factory-video_1.mp4"
+        ></video>
+      </div>
+
+      <!-- NAV WRAPPER -->
+      <div id="nav-wrapper">
+        <a
+          href="#secrets-of"
+          data-category="airism"
+          data-label="nav: what is airism"
+          data-action="click"
+        >
+          <h4>Les secrets</h4>
+        </a>
+        <a
+          href="#all-products"
+          data-category="airism"
+          data-label="nav: all products"
+          data-action="click"
+        >
+          <h4>La collection</h4>
+        </a>
+        <a
+          href="#features"
+          data-category="airism"
+          data-label="nav: features"
+          data-action="click"
+        >
+          <h4>Les propriétés</h4>
+        </a>
+      </div>
+
+      <!-- HERO COPY -->
+      <div id="hero-copy">
+        <h2 id="secrets-of">Les secrets</h2>
+        <p class="subheader">Les secrets de son confort</p>
+        <p>
+          Quel est le petit plus d'AIRism ? Le secret réside dans les fibres
+          ultrafines qui absorbent et évacuent instantanément la transpiration.
+          Le tissu fabriqué à partir de ces fibres est si doux que vous pourriez
+          même oublier que vous le portez. Dites adieu aux sensations
+          d'inconfort.
+        </p>
+
+        <div class="wrapper">
+          <div class="block">
+            <div class="blokc-asset">
+              <img
+                width="250px"
+                height="250px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-1.jpg"
+              />
+            </div>
+            <p>Sèchage ultra rapide.</p>
+          </div>
+
+          <div class="block">
+            <div class="blokc-asset">
+              <img
+                width="250px"
+                height="250px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-2.jpg"
+              />
+            </div>
+            <p>Une douceur optimale, sans friction.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLLECTION -->
+      <div id="all-products">
+        <h2>La collection</h2>
+
+        <div class="wrapper">
+          <div class="block">
+            <a
+              href="#innerwear"
+              data-category="airism"
+              data-action="click"
+              data-label="collection: w inner"
+            >
+              <div class="block-asset">
+                <img
+                  width="200px"
+                  height="200px"
+                  loading="lazy"
+                  class="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_inner.jpg"
+                />
+              </div>
+              <p>Sous-vêtements fonctionnels</p>
             </a>
-            <a href="#all-products" data-category="airism" data-label="nav: all products" data-action="click">
-                <h4>La collection</h4>
+          </div>
+          <div class="block">
+            <a
+              href="#tops"
+              data-category="airism"
+              data-action="click"
+              data-label="collection: w tops"
+            >
+              <div class="block-asset">
+                <img
+                  width="200px"
+                  height="200px"
+                  loading="lazy"
+                  class="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_tops.jpg"
+                />
+              </div>
+              <p>Hauts</p>
             </a>
-            <a href="#features" data-category="airism" data-label="nav: features" data-action="click">
-                <h4>Les propriétés</h4>
+          </div>
+          <div class="block">
+            <a
+              href="#bottoms"
+              data-category="airism"
+              data-action="click"
+              data-label="collection: w bottoms"
+            >
+              <div class="block-asset">
+                <img
+                  width="200px"
+                  height="200px"
+                  loading="lazy"
+                  class="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_bottoms.jpg"
+                />
+              </div>
+              <p>Pantalons</p>
             </a>
+          </div>
+          <div class="block">
+            <a
+              href="#loungewear"
+              data-category="airism"
+              data-action="click"
+              data-label="collection: w loungewear"
+            >
+              <div class="block-asset">
+                <img
+                  width="200px"
+                  height="200px"
+                  loading="lazy"
+                  class="lazy"
+                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_loungewear.jpg"
+                />
+              </div>
+              <p>Loungewear</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INNERWEAR -->
+      <div class="product-container" id="innerwear">
+        <h2>Sous-vêtements fonctionnels</h2>
+        <div class="product-wrapper" data-sku="457518">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Un soutien-gorge et un haut tout en un. Si doux que vous ne
+              voudrez jamais l'enlever.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="innerwear: w inner 1"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="innerwear: w inner 1"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>Une douceur optimale, sans friction.</p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
+
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Je suis ravie ! Très agréable, à porter la taille est bonne.
+                  Textile très doux, bonne coupe, taille parfaite.
+                </p>
+                <p class="author">Fan hon de Paris</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <!-- HERO COPY -->
-        <div id="hero-copy">
-            <h2 id="secrets-of">Les secrets</h2>
-            <p class="subheader">Les secrets de son confort</p>
-            <p>Quel est le petit plus d'AIRism ? Le secret réside dans les fibres ultrafines qui absorbent et évacuent
-                instantanément la transpiration. Le tissu fabriqué à partir de ces fibres est si doux que vous pourriez
-                même oublier que vous le portez. Dites adieu aux sensations d'inconfort.</p>
-
-            <div class="wrapper">
-                <div class="block">
-                    <div class="blokc-asset">
-                        <img width="250px" height="250px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-1.jpg">
-                    </div>
-                    <p>Sèchage ultra rapide.</p>
-                </div>
-
-                <div class="block">
-                    <div class="blokc-asset">
-                        <img width="250px" height="250px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-2.jpg">
-                    </div>
-                    <p>Une douceur optimale, sans friction.</p>
-                </div>
-            </div>
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid',
+          'pids','457308|457524|457477|457519','count', 4)$
         </div>
 
-        <!-- COLLECTION -->
-        <div id="all-products">
-            <h2>La collection</h2>
+        <div class="product-wrapper" data-sku="457313">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>Parfait sous un t-shirt ou une chemise</p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="innerwear: w inner 2"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="innerwear: w inner 2"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Jouez sur les superpositions ! La fraîcheur et le confort
+                    d'AIRism font toute la différence.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
 
-            <div class="wrapper">
-                <div class="block">
-                    <a href="#innerwear" data-category="airism" data-action="click" data-label="collection: w inner">
-                        <div class="block-asset">
-                            <img width="200px" height="200px" loading="lazy" class="lazy"
-                                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_inner.jpg">
-                        </div>
-                        <p>Sous-vêtements fonctionnels</p>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="#tops" data-category="airism" data-action="click" data-label="collection: w tops">
-                        <div class="block-asset">
-                            <img width="200px" height="200px" loading="lazy" class="lazy"
-                                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_tops.jpg">
-                        </div>
-                        <p>Hauts</p>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="#bottoms" data-category="airism" data-action="click" data-label="collection: w bottoms">
-                        <div class="block-asset">
-                            <img width="200px" height="200px" loading="lazy" class="lazy"
-                                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_bottoms.jpg">
-                        </div>
-                        <p>Pantalons</p>
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="#loungewear" data-category="airism" data-action="click"
-                        data-label="collection: w loungewear">
-                        <div class="block-asset">
-                            <img width="200px" height="200px" loading="lazy" class="lazy"
-                                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_loungewear.jpg">
-                        </div>
-                        <p>Loungewear</p>
-                    </a>
-                </div>
-            </div>
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  J'ai enfin un sous-vêtement léger qui évacue la transpiration
+                  de ma peau en marchant et qui ne coûte pas une fortune. Cool
+                  et confortable et ne se voit pas avec des cols larges. je vais
+                  en acheter plus, ma recherche est terminée !
+                </p>
+                <p class="author">Sunrisesara</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-
-        <!-- INNERWEAR -->
-        <div class="product-container" id="innerwear">
-            <h2>INNERWEAR</h2>
-            <div class="product-wrapper" data-sku="457518">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Un soutien-gorge et un haut tout en un. Si doux que vous ne voudrez jamais l'enlever.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="innerwear: w inner 1">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="innerwear: w inner 1" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Une douceur optimale, sans friction.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Je suis ravie ! Très agréable, à porter la taille est bonne. Textile très doux, bonne
-                                coupe, taille parfaite.</p>
-                            <p class="author">Fan hon de Paris</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','457308|457524|457477|457519','count', 4)$
-            </div>
-
-            <div class="product-wrapper" data-sku="457313">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Parfait sous un t-shirt ou une chemise</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="innerwear: w inner 2">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="innerwear: w inner 2" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Jouez sur les superpositions ! La fraîcheur et le confort d'AIRism font toute la
-                                    différence.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>J'ai enfin un sous-vêtement léger qui évacue la transpiration de ma peau en marchant et
-                                qui ne coûte pas une fortune. Cool et confortable et ne se voit pas avec des cols
-                                larges. je vais en acheter plus, ma recherche est terminée !</p>
-                            <p class="author">Sunrisesara</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','458001|458264|456265|457939','count', 4)$
-            </div>
-
-            <div class="product-wrapper" data-sku="457321">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Un tissu côtelé brillant fabriqué à partir d'un mélange de tissu AIRism et de soie (6 % de soie).
-                    </p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="innerwear: w inner 3">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="innerwear: w inner 3" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Douceur et confort, dans une soie mélangée à la brillance éclatante.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Doux, très agréable sur la peau, se fait oublier, il est moulant et maintient bien au
-                                chaud. Je recommande.</p>
-                            <p class="author">Valéry</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','457308|457524|457477|457519','count', 4)$
-            </div>
-
-
-            <div class="product-wrapper" data-sku="455288">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Le design sans couture reste caché sous les couches extérieures.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="innerwear: w inner 4">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="innerwear: w inner 4" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Un confort optimal, tout au long de la journée.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>C'est la culotte parfaite ! Elle est bien coupée, la matière est très douce et agréable à
-                                porter. Il est invisible sous les vêtements.<br>Je l'ai acheté en noir et en beige. Je
-                                ne porte plus que ces culottes.</p>
-                            <p class="author">Salem</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','455290|455291|457143|455320','count', 4)$
-            </div>
-
-
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid',
+          'pids','458001|458264|456265|457939','count', 4)$
         </div>
 
-        <!-- TOPS -->
-        <div class="product-container" id="tops">
-            <h2>Hauts</h2>
-            <div class="product-wrapper" data-sku="456261">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Coupe 90% des rayons UV. UPF50+ * Soyeux et frais au toucher. *UPF signifie Ultraviolet
-                        Protection Factor (facteur de protection contre les rayons ultraviolets), un indicateur de
-                        protection contre les UV pour les textiles tels que les vêtements.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="tops: w top 1">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
+        <div class="product-wrapper" data-sku="457321">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Un tissu côtelé brillant fabriqué à partir d'un mélange de tissu
+              AIRism et de soie (6 % de soie).
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="innerwear: w inner 3"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="innerwear: w inner 3"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
                 </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="tops: w top 1" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Construction en maille respirante, mise à jour avec des caractéristiques
-                                    désodorisantes. Avec son design empochable, il se range facilement dans la pochette
-                                    intégrée.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Je le cherchais depuis longtemps le sweat à capuche , zippé , en matiere pas épaisse mais
-                                fine . Je l'ai trouvé enfin avec ce sweat génial , qui taille bien et dans plein de
-                                couleurs superbes !</p>
-                            <p class="author">Cat06</p>
-                        </div>
-                    </a>
-
+                <div class="feature-copy">
+                  <p>
+                    Douceur et confort, dans une soie mélangée à la brillance
+                    éclatante.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
                 </div>
-            </div>
+              </div>
 
-
-            <div class="product-wrapper" data-sku="458001">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Tissu lisse en coton AIRism. Il se distingue par sa coupe ample et sa longueur légèrement plus
-                        courte.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="tops: w top 2">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="tops: w top 2" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>AIRism est un tissu incroyablement léger et performant, conçu dans un seul but :
-                                    assurer un confort permanent dans toutes les conditions.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Le parfait t-shirt oversize. Matière excellente. Très agrèable sur la peau. Taille
-                                parfaite Coupe parfaite.</p>
-                            <p class="author">Tizi1234</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="product-wrapper" data-sku="456265">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Ce haut frais et léger comme l'air est parfait pour les fans de look casual.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="tops: w top 3">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="tops: w top 3" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Tissu lisse avec un beau drapé. Encolure bateau flatteuse et longueur classique. En
-                                    un mot, indémodable.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Le T shirt est sobre , ce qui permet de le porter n’importe où. Il est d’une grande
-                                douceur sur la peau , ne se froisse pas et est idéal pour le sport (transpiration
-                                invisible)</p>
-                            <p class="author">Val7</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','458264|457939','count', 4)$
-            </div>
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Doux, très agréable sur la peau, se fait oublier, il est
+                  moulant et maintient bien au chaud. Je recommande.
+                </p>
+                <p class="author">Valéry</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <!-- BOTTOMS -->
-        <div class="product-container" id="bottoms">
-            <h2>Pantalons</h2>
-            <div class="product-wrapper" data-sku="455938">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>AIRism vous procure une sensation de fraîcheur. Leggings lisses avec une coupe confortable et
-                        ajustée.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="bottoms: w bottom 1">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="bottom: w bottom 1" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Tissu lisse, assez épais, avec une texture mate. Plus extensible à la taille pour un
-                                    meilleur ajustement.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>J'ai acheté ces leggings super confortables à porter à la fois pour l'exercice et la
-                                détente. Ils sont parfaits pour les deux ! Ils s'adaptent parfaitement, la longueur des
-                                jambes est parfaite, il n'y a pas de coutures intrusives et ils s'adaptent
-                                confortablement à la taille. Il y a aussi une poche latérale pratique pour votre
-                                téléphone, vos mouchoirs, etc.</p>
-                            <p class="author">Kazza2304</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-
-            <div class="product-wrapper" data-sku="455942">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Pantalon de jogging incroyablement confortable et polyvalent pour toutes les situations.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="bottoms: w bottom 2">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
-                </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="bottom: w bottom 2" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Le tissu Ultra Stretch est extensible dans toutes les directions pour une liberté de
-                                    mouvement exceptionnelle. Désormais doté d'une poche zippée à l'arrière pour plus de
-                                    commodité.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>Pantalon léger avec une bonne coupe, facile à laver. Je l'ai en trois couleurs.<br>Une de
-                                mes pièces préférées.</p>
-                            <p class="author">Carola</p>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','459795|455939|459249','count', 4)$
-            </div>
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid',
+          'pids','457308|457524|457477|457519','count', 4)$
         </div>
 
-        <!-- LOUNGEWEAR -->
-        <div class="product-container" id="loungewear">
-            <h2>Loungewear</h2>
-            <div class="product-wrapper" data-sku="454532">
-                <div class="product-hero">
-                    <h3 data-product-name=""></h3>
-                    <p>Le pyjama parfait, tout simplement.</p>
-                    <a href="" data-product-url="" data-category="airism" data-action="click"
-                        data-label="loungewear: w loungewear 1">
-                        <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1.jpg"
-                            width="650px" height="650px" loading="lazy" class="lazy">
-                    </a>
+        <div class="product-wrapper" data-sku="455288">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Le design sans couture reste caché sous les couches extérieures.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="innerwear: w inner 4"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="innerwear: w inner 4"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
                 </div>
-                <div class="product-content">
-                    <a href="" data-category="airism" data-label="loungewear: w loungewear 1" data-action="click"
-                        data-product-url="">
-                        <div class="product-feature">
-                            <div class="feature-asset">
-                                <img data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1-feature.jpg"
-                                    width="170px" height="170px" loading="lazy" class="lazy">
-                            </div>
-                            <div class="feature-copy">
-                                <p>Un classique absolu. La douceur du coton sur un pyjama au design tout simple.</p>
-                                <h4 data-product-price=""></h4>
-                            </div>
-                        </div>
-
-                        <div class="customer-review">
-                            <p class="review-title">Les avis de nos clients</p>
-                            <p class="stars">★★★★★</p>
-                            <p>J'ai commandé sur internet ce pyjama, que j'ai reçu très vite, suis allée le chercher en
-                                magasin, tout s'est très bien déroulé. En ce qui concerne l'article, il me va merveille,
-                                il est confortable, ample et doux, et assez élégant, je suis très satisfaite de cet
-                                achat</p>
-                            <p class="author">Samourai19</p>
-                        </div>
-                    </a>
-
+                <div class="feature-copy">
+                  <p>Un confort optimal, tout au long de la journée.</p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
                 </div>
-            </div>
+              </div>
 
-
-            <div class="related-products">
-                <h3>Articles similaires</h3>
-                $include('Page-RenderGrid', 'pids','462019|457659','count', 4)$
-            </div>
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  C'est la culotte parfaite ! Elle est bien coupée, la matière
+                  est très douce et agréable à porter. Il est invisible sous les
+                  vêtements.<br />Je l'ai acheté en noir et en beige. Je ne
+                  porte plus que ces culottes.
+                </p>
+                <p class="author">Salem</p>
+              </div>
+            </a>
+          </div>
         </div>
 
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid',
+          'pids','455290|455291|457143|455320','count', 4)$
+        </div>
+      </div>
 
-        <!-- FEATURES OF AIRISM -->
-        <div id="features">
-            <h2>Les propriétés</h2>
-            <p class="subheader">Découvrez les secrets du confort exceptionnel d'AIRism.</p>
-            <p class="note">Remarque : les fonctions varient selon les produits.</p>
+      <!-- TOPS -->
+      <div class="product-container" id="tops">
+        <h2>Hauts</h2>
+        <div class="product-wrapper" data-sku="456261">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Coupe 90% des rayons UV. UPF50+ * Soyeux et frais au toucher. *UPF
+              signifie Ultraviolet Protection Factor (facteur de protection
+              contre les rayons ultraviolets), un indicateur de protection
+              contre les UV pour les textiles tels que les vêtements.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="tops: w top 1"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="tops: w top 1"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Construction en maille respirante, mise à jour avec des
+                    caractéristiques désodorisantes. Avec son design empochable,
+                    il se range facilement dans la pochette intégrée.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
 
-            <div class="wrapper">
-                <div class="feature">
-                    <div class="feature-asset">
-                        <img width="300px" height="300px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function01.jpg">
-                    </div>
-                    <div class="feature-copy">
-                        <p class="feature-title">Absorbe et évacue instantanément la transpiration.</p>
-                        <p>Les fibres ultrafines évacuent instantanément l'humidité.</p>
-                        <p class="disclaimer">Gauche : Coton. Droite : AIRism</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-asset">
-                        <img width="300px" height="300px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function02.jpg">
-                    </div>
-                    <div class="feature-copy">
-                        <p class="feature-title">S'étire pour un ajustement parfait.</p>
-                        <p>Environ 2 fois l'étirement horizontal et 1,5 fois l'étirement vertical.</p>
-                        <p class="disclaimer">*T-shirt à col ras du cou pour homme</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-asset">
-                        <img width="300px" height="300px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function03.jpg">
-                    </div>
-                    <div class="feature-copy">
-                        <p class="feature-title">L'effet désodorisant aide à prévenir les odeurs.</p>
-                        <p>Absorbe, neutralise et élimine les sources d'odeurs.</p>
-                        <p class="disclaimer">*Efficace contre les odeurs causées par la transpiration.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-asset">
-                        <img width="300px" height="300px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function04.jpg">
-                    </div>
-                    <div class="feature-copy">
-                        <p class="feature-title">Texture lisse sur la peau.</p>
-                        <p>Sensation de douceur soyeuse avec un faible frottement.</p>
-                        <p class="disclaimer">Gauche : Coton. Droite : AIRism</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-asset">
-                        <img width="300px" height="300px" loading="lazy" class="lazy"
-                            data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function05.jpg">
-                    </div>
-                    <div class="feature-copy">
-                        <p class="feature-title">Sensation de fraîcheur instantanée.</p>
-                        <p>Sa douceur maximise le transfert de chaleur de la peau au tissu.</p>
-
-                    </div>
-                </div>
-            </div>
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Je le cherchais depuis longtemps le sweat à capuche , zippé ,
+                  en matiere pas épaisse mais fine . Je l'ai trouvé enfin avec
+                  ce sweat génial , qui taille bien et dans plein de couleurs
+                  superbes !
+                </p>
+                <p class="author">Cat06</p>
+              </div>
+            </a>
+          </div>
         </div>
 
+        <div class="product-wrapper" data-sku="458001">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Tissu lisse en coton AIRism. Il se distingue par sa coupe ample et
+              sa longueur légèrement plus courte.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="tops: w top 2"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="tops: w top 2"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    AIRism est un tissu incroyablement léger et performant,
+                    conçu dans un seul but : assurer un confort permanent dans
+                    toutes les conditions.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
 
-        <script>
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Le parfait t-shirt oversize. Matière excellente. Très agrèable
+                  sur la peau. Taille parfaite Coupe parfaite.
+                </p>
+                <p class="author">Tizi1234</p>
+              </div>
+            </a>
+          </div>
+        </div>
 
-            // Initiate lazy load
-            var pageLazyLoad = new LazyLoad({
-                elements_selector: "[loading=lazy]",
-                use_native: false,
+        <div class="product-wrapper" data-sku="456265">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Ce haut frais et léger comme l'air est parfait pour les fans de
+              look casual.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="tops: w top 3"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="tops: w top 3"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Tissu lisse avec un beau drapé. Encolure bateau flatteuse et
+                    longueur classique. En un mot, indémodable.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
+
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Le T shirt est sobre , ce qui permet de le porter n’importe
+                  où. Il est d’une grande douceur sur la peau , ne se froisse
+                  pas et est idéal pour le sport (transpiration invisible)
+                </p>
+                <p class="author">Val7</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid', 'pids','458264|457939','count', 4)$
+        </div>
+      </div>
+
+      <!-- BOTTOMS -->
+      <div class="product-container" id="bottoms">
+        <h2>Pantalons</h2>
+        <div class="product-wrapper" data-sku="455938">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              AIRism vous procure une sensation de fraîcheur. Leggings lisses
+              avec une coupe confortable et ajustée.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="bottoms: w bottom 1"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="bottom: w bottom 1"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Tissu lisse, assez épais, avec une texture mate. Plus
+                    extensible à la taille pour un meilleur ajustement.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
+
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  J'ai acheté ces leggings super confortables à porter à la fois
+                  pour l'exercice et la détente. Ils sont parfaits pour les deux
+                  ! Ils s'adaptent parfaitement, la longueur des jambes est
+                  parfaite, il n'y a pas de coutures intrusives et ils
+                  s'adaptent confortablement à la taille. Il y a aussi une poche
+                  latérale pratique pour votre téléphone, vos mouchoirs, etc.
+                </p>
+                <p class="author">Kazza2304</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="product-wrapper" data-sku="455942">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>
+              Pantalon de jogging incroyablement confortable et polyvalent pour
+              toutes les situations.
+            </p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="bottoms: w bottom 2"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="bottom: w bottom 2"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Le tissu Ultra Stretch est extensible dans toutes les
+                    directions pour une liberté de mouvement exceptionnelle.
+                    Désormais doté d'une poche zippée à l'arrière pour plus de
+                    commodité.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
+
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  Pantalon léger avec une bonne coupe, facile à laver. Je l'ai
+                  en trois couleurs.<br />Une de mes pièces préférées.
+                </p>
+                <p class="author">Carola</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid', 'pids','459795|455939|459249','count', 4)$
+        </div>
+      </div>
+
+      <!-- LOUNGEWEAR -->
+      <div class="product-container" id="loungewear">
+        <h2>Loungewear</h2>
+        <div class="product-wrapper" data-sku="454532">
+          <div class="product-hero">
+            <h3 data-product-name=""></h3>
+            <p>Le pyjama parfait, tout simplement.</p>
+            <a
+              href=""
+              data-product-url=""
+              data-category="airism"
+              data-action="click"
+              data-label="loungewear: w loungewear 1"
+            >
+              <img
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1.jpg"
+                width="650px"
+                height="650px"
+                loading="lazy"
+                class="lazy"
+              />
+            </a>
+          </div>
+          <div class="product-content">
+            <a
+              href=""
+              data-category="airism"
+              data-label="loungewear: w loungewear 1"
+              data-action="click"
+              data-product-url=""
+            >
+              <div class="product-feature">
+                <div class="feature-asset">
+                  <img
+                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1-feature.jpg"
+                    width="170px"
+                    height="170px"
+                    loading="lazy"
+                    class="lazy"
+                  />
+                </div>
+                <div class="feature-copy">
+                  <p>
+                    Un classique absolu. La douceur du coton sur un pyjama au
+                    design tout simple.
+                  </p>
+                  <h4 data-product-price></h4>
+                  <h4 data-product-saleprice></h4>
+                </div>
+              </div>
+
+              <div class="customer-review">
+                <p class="review-title">Les avis de nos clients</p>
+                <p class="stars">★★★★★</p>
+                <p>
+                  J'ai commandé sur internet ce pyjama, que j'ai reçu très vite,
+                  suis allée le chercher en magasin, tout s'est très bien
+                  déroulé. En ce qui concerne l'article, il me va merveille, il
+                  est confortable, ample et doux, et assez élégant, je suis très
+                  satisfaite de cet achat
+                </p>
+                <p class="author">Samourai19</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="related-products">
+          <h3>Articles similaires</h3>
+          $include('Page-RenderGrid', 'pids','462019|457659','count', 4)$
+        </div>
+      </div>
+
+      <!-- FEATURES OF AIRISM -->
+      <div id="features">
+        <h2>Les propriétés</h2>
+        <p class="subheader">
+          Découvrez les secrets du confort exceptionnel d'AIRism.
+        </p>
+        <p class="note">Remarque : les fonctions varient selon les produits.</p>
+
+        <div class="wrapper">
+          <div class="feature">
+            <div class="feature-asset">
+              <img
+                width="300px"
+                height="300px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function01.jpg"
+              />
+            </div>
+            <div class="feature-copy">
+              <p class="feature-title">
+                Absorbe et évacue instantanément la transpiration.
+              </p>
+              <p>Les fibres ultrafines évacuent instantanément l'humidité.</p>
+              <p class="disclaimer">Gauche : AIRism. Droite : Coton</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-asset">
+              <img
+                width="300px"
+                height="300px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function02.jpg"
+              />
+            </div>
+            <div class="feature-copy">
+              <p class="feature-title">S'étire pour un ajustement parfait.</p>
+              <p>
+                Environ 2 fois l'étirement horizontal et 1,5 fois l'étirement
+                vertical.
+              </p>
+              <p class="disclaimer">*T-shirt à col ras du cou pour homme</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-asset">
+              <img
+                width="300px"
+                height="300px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function03.jpg"
+              />
+            </div>
+            <div class="feature-copy">
+              <p class="feature-title">
+                L'effet désodorisant aide à prévenir les odeurs.
+              </p>
+              <p>Absorbe, neutralise et élimine les sources d'odeurs.</p>
+              <p class="disclaimer">
+                *Efficace contre les odeurs causées par la transpiration.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-asset">
+              <img
+                width="300px"
+                height="300px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function04.jpg"
+              />
+            </div>
+            <div class="feature-copy">
+              <p class="feature-title">Texture lisse sur la peau.</p>
+              <p>Sensation de douceur soyeuse avec un faible frottement.</p>
+              <p class="disclaimer">Gauche : Coton. Droite : AIRism</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-asset">
+              <img
+                width="300px"
+                height="300px"
+                loading="lazy"
+                class="lazy"
+                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function05.jpg"
+              />
+            </div>
+            <div class="feature-copy">
+              <p class="feature-title">Sensation de fraîcheur instantanée.</p>
+              <p>
+                Sa douceur maximise le transfert de chaleur de la peau au tissu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Initiate lazy load
+        var pageLazyLoad = new LazyLoad({
+          elements_selector: '[loading=lazy]',
+          use_native: false,
+        });
+
+        var video = document.querySelectorAll('video.responsive');
+        function addSourceToVideo(element, src) {
+          var source = document.createElement('source');
+          source.src = src;
+          source.type = 'video/mp4';
+          console.log(src);
+          element.appendChild(source);
+        }
+        function whichSizeVideo(element, src) {
+          var windowWidth = window.innerWidth
+            ? window.innerWidth
+            : $(window).width();
+          if (windowWidth >= 768) {
+            element.setAttribute('poster', src.dataset.desktopPoster);
+            addSourceToVideo(element, src.dataset.desktopVid);
+          } else {
+            addSourceToVideo(element, src.dataset.mobileVid);
+            element.setAttribute('poster', src.dataset.mobilePoster);
+          }
+        }
+        function videoSize() {
+          if (video !== undefined) {
+            video.forEach(function (element, index) {
+              whichSizeVideo(element, element);
             });
+          }
+        }
+        videoSize();
+      </script>
 
-            var video = document.querySelectorAll('video.responsive');
-            function addSourceToVideo(element, src) {
-                var source = document.createElement('source');
-                source.src = src;
-                source.type = 'video/mp4';
-                console.log(src);
-                element.appendChild(source);
-            }
-            function whichSizeVideo(element, src) {
-                var windowWidth = window.innerWidth
-                    ? window.innerWidth
-                    : $(window).width();
-                if (windowWidth >= 768) {
-                    element.setAttribute('poster', src.dataset.desktopPoster)
-                    addSourceToVideo(element, src.dataset.desktopVid);
-                } else {
-                    addSourceToVideo(element, src.dataset.mobileVid);
-                    element.setAttribute('poster', src.dataset.mobilePoster)
-                }
-            }
-            function videoSize() {
-                if (video !== undefined) {
-                    video.forEach(function (element, index) {
-                        whichSizeVideo(element, element);
-                    });
-                }
-            }
-            videoSize();
-
-        </script>
-
-        <!--  EMBED CONTENT PAGE FOOTER-->
-        $include('Page-Include', 'cid', 'content-page-footer', 'includecustomfiles', true)$
+      <!--  EMBED CONTENT PAGE FOOTER-->
+      $include('Page-Include', 'cid', 'content-page-footer',
+      'includecustomfiles', true)$
     </div>
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
