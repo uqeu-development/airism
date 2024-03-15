@@ -1,773 +1,943 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide-lg.css"
-      media="(min-width: 1440px)"
-    />
-    <script
-      defer=""
-      src="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/js/lib/splide.min.js"
-      type="text/javascript"
-    ></script>
-    <link rel="stylesheet" href="../css/airism-styles.css" />
+<meta property="og:image"
+  content="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/EN/L3_feature_og_image_AIRism-kidsbaby.jpg?20230213">
 
-    <script type="module">
-      var sliders = document.querySelectorAll('[data-splide]');
-      if (sliders.length) {
-        for (let slider of sliders) {
-          var splide = new Splide(slider);
-          splide.mount();
-        }
-      }
-    </script>
-    <title>Project name</title>
-  </head>
+<link rel="preload" href="/jp/ja/contents/feature/common/js/ariakedesign-components@1.6.4/main.js" as="script">
+<link rel="stylesheet" href="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/css/index.css?202302131"
+  media="all">
 
-  <body>
-    <!-- COPY TO SALEFORCE FROM HERE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-    <script
-      defer=""
-      src="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/main.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/fetch-product.css"
-    />
+<link rel="stylesheet" href="/jp/ja/special-feature/feature/common/css/ariakedesign@3.3.0/ariakedesign.css" media="all">
+<script src="/jp/ja/special-feature/feature/common/js/ariakedesign@4.2.1/ariakedesign.js" defer></script>
+<script src="/jp/ja/contents/feature/common/js/ariakedesign-components@1.6.4/main.js" defer></script>
 
-    <div id="container">
-      <!-- START CODING HERE -->
+<script defer=""
+  src="/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/vba2363a38825191e1f1f023d25f5ad8f248a90d2/js/product-info-fetch.js"></script>
+<style>
+  .-bubbleBorder::after {
+    left: 23px !important;
+  }
 
-      <!-- NAV -->
-      <div id="tabs-wrapper">
-        <div class="tab">
-          <a
-            href="airism-women.html"
-            data-cateogry="airism"
-            data-label="women: women-nav"
-            data-action="click"
-          >
-            <h3>FEMME</h3>
-          </a>
+  .-userIcon {
+    margin-left: 17px !important;
+  }
+</style>
+<style>
+  #container .hero-product .l3Grid {
+    -ms-grid-columns: 1fr [1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media only screen and (max-width: 500px) {
+    #container .hero-product .l3Grid {
+      -ms-grid-columns: 1fr [1];
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #container .l3Grid__element--content {
+    display: none !important;
+  }
+
+  #container .productTile__swatchImage {
+    border: 1px solid var(--color-lightGrey);
+    height: var(--height-swatchDimension);
+    vertical-align: middle;
+    width: var(--height-swatchDimension);
+  }
+
+  #container .productTile__titleContainer {
+    height: 100% !important;
+  }
+
+  #container .productTile__titleContainer {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .productTile__priceContainer {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .productTile__swatchList {
+    background: none !important;
+  }
+
+  #container .productTile__textContainer {
+    background: none !important;
+  }
+
+  #container .badges--tile .badge {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .l3Grid {
+    gap: 10px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: left;
+    font-weight: 500;
+    -ms-grid-columns: 1fr [4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media only screen and (max-width: 500px) {
+    #container .l3Grid {
+      padding-left: 3%;
+      padding-right: 3%;
+      -ms-grid-columns: 1fr [2];
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+    }
+
+    #container .l3Grid .productTile__swatchImage {
+      height: 20px;
+      width: 20px;
+    }
+
+    #container .l3Grid .productTile__plus {
+      height: 14px;
+    }
+  }
+</style>
+<style>
+  body {
+    font-weight: 400 !important;
+  }
+
+  .fr-tab-content {
+    display: none;
+  }
+
+  .is-show {
+    display: block;
+  }
+
+  body[data-bff-version=v5] .main_inner {
+    padding-top: 0px !important;
+  }
+
+  .main-inner {
+    padding-top: 0px !important;
+  }
+
+  .fr-fixedAnchor.-isFixed {
+    top: 72px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .fr-fixedAnchor.-isFixed {
+      top: 50px;
+    }
+  }
+
+  @media screen and (min-width: 813px) {
+
+    .fr-modalParent_contents,
+    .fr-modalParent_contentsInner {
+      top: 53%;
+    }
+
+    .-default .fr-anchorButton_item {
+      width: calc((100% - 3px) / 3);
+    }
+
+    .-lineUpPannel {
+      grid-template-columns: repeat(5, minmax(0px, 165px));
+    }
+
+
+    .-lineUpPannelKids {
+      grid-template-columns: repeat(4, minmax(0px, 165px));
+    }
+  }
+
+  .fr-modalParent_contents,
+  .fr-modalParent_contentsInner {
+    z-index: 9999
+  }
+</style>
+
+<body class="js-trackEventScroll" data-track-event-category="L3_24SS-AIRism-kids"
+  data-measurement-points="[25, 50, 75, 100]" data-bff-version="v5" data-bff-region="us" data-bff-lang="en"
+  data-updated-date="20240213">
+
+
+
+  <div class="wrapper" id="container">
+
+    <main class="main">
+      <div class="fr-fixedAnchor js-fr-fixedAnchor -loading"
+        data-config="{&quot;.js-fixedAnchor_1&quot;: 0, &quot;.js-fixedAnchor_2&quot;: 0, &quot;.js-fixedAnchor_12&quot;: 0, &quot;.js-fixedAnchor_99&quot;: 0}">
+        <div class="fr-fixedAnchor_container js-fr-fixedAnchor_container">
+          <ul class="fr-fixedAnchor_inner js-fr-fixedAnchor_inner">
+            <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+                class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+                data-link=".js-fixedAnchor_1" data-label="Tapable_Secret_k">Les secrets de la technologie AIRism</a>
+            </li>
+            <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+                class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+                data-link=".js-fixedAnchor_2" data-label="Tapable_Lineup_k">La collection</a></li>
+            <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+                class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+                data-link=".js-fixedAnchor_12" data-label="Tapable_Function_k">Les caractéristiques d'AIRism</a></li>
+          </ul>
         </div>
-        <div class="tab">
-          <a
-            href="airism-men.html"
-            data-cateogry="airism"
-            data-label="women: men-nav"
-            data-action="click"
-          >
-            <h3>HOMME</h3>
-          </a>
-        </div>
-        <div
-          class="tab active"
-          data-cateogry="airism"
-          data-label="women: kids-nav"
-          data-action="click"
-        >
-          <a href="airism-kids.html">
-            <h3>ENFANT &amp; BÉBÉ</h3>
-          </a>
+      </div>
+      <div class="main_inner -noMaxWidth">
+        <div class="pc-container -main">
+
+          <nav class="fr-tabs -gender">
+            <ul class="fr-tabs_inner">
+              <li class="fr-tabs_item"><a
+                  class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m js-trackEvent fr-sp-px-05g u-uqFont-r"
+                  href="airism-women.html" data-label="Internal_Women_k">FEMME</a></li>
+              <li class="fr-tabs_item"><a
+                  class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m js-trackEvent fr-sp-px-05g u-uqFont-r"
+                  href="airsm-men.html" data-label="Internal_Men_k">HOMME</a></li>
+              <li class="fr-tabs_item -active"><a
+                  class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m fr-sp-px-05g u-uqFont-r">ENFANT</a></li>
+            </ul>
+          </nav>
+          <h1 class="fr-heading -h1 fr-sp-px-1g fr-sp-py-l fr-pc-my-l">AIRism : le secret d'un confort ultime</h1>
+          <div class="u-pc-w1176 u-pc-mr-auto u-pc-ml-auto">
+            <figure class="u-imgAdjustBox" data-pc-aspect-ratio="2:1" data-sp-aspect-ratio="3:4">
+              <picture class="u-imgAdjustBox_inner">
+                <source
+                  srcset="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2024/content-pages/airism/airism-kids-kv-mb.jpg"
+                  type="image/jpeg" media="(max-width: 814px)">
+                <img class="fr-img"
+                  src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2024/content-pages/airism/airism-kids-kv.jpg"
+                  alt="AIRism: THE SECRET TO ULTIMATE COMFORT" data-expand="300">
+              </picture>
+            </figure>
+          </div>
+
+
+          <div class="fr-sp-mt-xxxl fr-pc-mt-xxxl fr-sp-mb-m fr-pc-mb-s">
+            <ul class="fr-anchorButton -default -length-3 js-fixedAnchorStart fr-pc-mb-s fr-sp-mb-s">
+              <li class="fr-anchorButton_item">
+                <a class="fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll js-trackEvent"
+                  data-link=".js-fixedAnchor_1" data-label="Tapable_Secret_k">Les secrets de la technologie AIRism</a>
+              </li>
+              <li class="fr-anchorButton_item"><a
+                  class="fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll js-trackEvent"
+                  data-link=".js-fixedAnchor_2" data-label="Tapable_Lineup_k">La collection</a></li>
+              <li class="fr-anchorButton_item"><a
+                  class="fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll js-trackEvent"
+                  data-link=".js-fixedAnchor_12" data-label="Tapable_Function_k">Les caractéristiques d'AIRism</a></li>
+            </ul>
+          </div>
+
+          <!-- SECRET OF AIRISM -->
+          <section class="u-fixedAnchorAdjust js-fixedAnchor_1">
+            <div class="js-trackEventReading" data-label="read_01"></div>
+            <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl u-align-center">Les secrets de la
+              technologie AIRism</h2>
+            <p class="fr-sp-px-1g fr-sp-my-m fr-pc-my-m u-align-center">Le secret d'AIRism réside dans ses fibres
+              ultrafines. Elles absorbent et évacuent rapidement la transpiration du corps et créent une texture super
+              douce qui glisse sur la peau.</p>
+            <div class="fr-sp-px-1g -flex-row -pc-gap-24 -sp-gap-15 -flex-row-center">
+              <div class="-flex-col -pc-w-276 -sp-w-165 -flex-col-center">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/comfort01.jpg?20230213"
+                      alt="Quick Drying" data-expand="300">
+                  </picture>
+                </figure>
+                <p class="fr-sp-px-1g fr-pc-mt-s fr-sp-mt-s">Séchage rapide</p>
+              </div>
+              <div class="-flex-col -pc-w-276 -sp-w-165 -flex-col-center">
+                <figure class="u-imgAdjustBox -pc-w-276" data-aspect-ratio="1:1">
+                  <div class="-flex-col -pc-w-276">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/comfort02.jpg?20230213"
+                        alt="Smooth Texture" data-expand="300">
+                    </picture>
+                  </div>
+                </figure>
+                <p class="fr-sp-px-1g fr-pc-mt-s fr-sp-mt-s">Texture douce</p>
+              </div>
+            </div>
+            <div class="fr-"></div>
+            <div class="u-fixedAnchorAdjust js-fixedAnchor_2">
+              <div class="js-trackEventReading" data-label="read_02"></div>
+              <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl u-align-center">La collection</h2>
+              <div class="fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m -lineUpPannelKids -pc-gap-24 -sp-gap-15 -flex-row-center">
+                <div class="fr-sp-mb-xs fr-pc-mb-xs -lineUpRecomme">À la une</div>
+                <a href="#"
+                  class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-105 -flex-col-center js-smoothScroll"
+                  data-link=".js-fixedAnchor_3" data-label="Anchor_Innerwear_k">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/lineup_inner.png?20230213"
+                        alt="Innerwear" data-expand="300">
+                    </picture>
+                  </figure>
+                  <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Sous-vêtements</h5>
+                  <img src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg" alt="arrow">
+                </a>
+
+                <a href="#" data-link=".js-fixedAnchor_4"
+                  class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-105 -flex-col-center js-smoothScroll"
+                  data-label="Anchor_Tops_k">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/lineup_tops.png?20230213"
+                        alt="Tops" data-expand="300">
+                    </picture>
+                  </figure>
+                  <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Hauts</h5>
+                  <img src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg" alt="arrow">
+                </a>
+
+                <a href="#" data-link=".js-fixedAnchor_5"
+                  class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-105 -flex-col-center js-smoothScroll"
+                  data-label="Anchor_Bottoms_k">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/lineup_bottoms.png?20230213"
+                        alt="Bottoms" data-expand="300">
+                    </picture>
+                  </figure>
+                  <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Bas</h5>
+                  <img src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg" alt="arrow">
+                </a>
+
+                <a href="#" data-link=".js-fixedAnchor_6"
+                  class="js-trackEvent fr-sp-mt-m -lineUpContents2 -flex-col -pc-w-165 -sp-w-105 -flex-col-center js-smoothScroll"
+                  data-label="Anchor_Dress_k">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/lineup_onepiece.png?20230213"
+                        alt="Dresses" data-expand="300">
+                    </picture>
+                  </figure>
+                  <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Robes</h5>
+                  <img src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg" alt="arrow">
+                </a>
+
+
+              </div>
+            </div>
+            <div class="u-align-center u-fixedAnchorAdjust js-fixedAnchor_3">
+              <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl">Sous-vêtements</h2>
+              <p class="fr-sp-px-1g fr-pc-my-m fr-sp-my-m">Trois tissus au choix :</p>
+            </div>
+          </section>
+
+
+          <section>
+            <div class="js-trackEventReading" data-label="read_03"></div>
+            <div class="-flex-row -flex-row-center -sp-width-100">
+
+              <a href="#"
+                class="js-trackEvent -flex-col -flex-col-center -bgAirismAnchor -pc-w-240 -pc-px-50 fr-pc-py-m fr-sp-py-m -sp-width-100 js-smoothScroll"
+                data-link=".js-fixedAnchor_9" data-label="Anchor_Material_AIRism_k">
+                <figure class="u-imgAdjustBox -sp-w-105" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/inner_lineup_airism.jpg?20230213"
+                      alt="AIRism" data-expand="300">
+                  </picture>
+                </figure>
+                <div class="fr-heading fr-sp-my-s fr-pc-my-s -br u-align-center">AIRism</div>
+                <img alt="arrow" class="-arrow"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow_white.svg">
+              </a>
+
+            </div>
+          </section>
         </div>
       </div>
 
-      <h2 class="title" style="text-transform: initial">AIRism</h2>
-      <div class="hero">
-        <video
-          muted=""
-          autoplay=""
-          playsinline=""
-          loop=""
-          class="responsive"
-          data-desktop-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/hero-poster.jpg"
-          data-mobile-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/mobile-poster.jpg"
-          data-desktop-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/pc-l1-pickup3-airism-factory-video_1.mp4"
-          data-mobile-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/mb-l1-pickup3-airism-factory-video_1.mp4"
-        ></video>
-      </div>
+      <section>
+        <div class="js-fixedAnchor_9 u-fixedAnchorAdjust">
+          <div class="js-trackEventReading" data-label="read_04"></div>
+          <div class="-bgAirism fr-pc-pb-xxl fr-sp-pb-xxl">
+            <div class="fr-pc-py-xl fr-sp-py-xl -bgAirismStart u-align-center">
+              <h2 class="fr-heading -h2 fr-sp-px-1g">AIRism</h2>
+              <p class="fr-sp-px-2g fr-sp-mt-m fr-pc-mt-m">AIRism vous offre fraîcheur et confort même lorsque vous
+                transpirez.</p>
+            </div>
+            <div class="pc-container -main fr-sp-mt-xxxl fr-pc-mt-xxxl fr-sp-px-1g">
+              <h2 class="fr-heading -h2 u-align-center">Soutien-gorge AIRism</h2>
+              <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Pas de tension, d'inconfort ou d'humidité. Les bonnets
+                souples soutiennent délicatement les corps en développement, idéal pour un premier soutien-gorge.</p>
+              <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+                <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/bra_mv.jpg?20230213"
+                      alt="AIRism Bra" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <section class="l-container fr-pc-mt-xxl fr-sp-mt-xl">
+                <div class="-point">Caractéristiques</div>
+                <div class="l-containerInner fr-pc-mt-m fr-sp-mt-m">
+                  <div class="p-technologyListWrapper">
+                    <ul class="p-technologyList js-animationSlideContents">
+                      <li class="p-technologyItem fr-pc-py-m fr-sp-py-m">
+                        <div class="-flex-row -flex-row-center -flex-col-center -w-100 -pointHeader2">
+                          <div class="-pointNumber u-uqFont-l -flex-col -flex-col-center">1</div>
+                          <div class="-pointTitle">Maintien en douceur</div>
+                        </div>
+                        <div class="fr-pc-mt-m fr-sp-mt-m -pc-w-276 -sp-w-240 -sp-mx-auto -mx-auto">
+                          <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                            <picture class="u-imgAdjustBox_inner">
+                              <img class="fr-img lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/pickup_bra01.jpg?20230213"
+                                alt="Support gently and softly" data-expand="300">
+                            </picture>
+                          </figure>
+                        </div>
+                        <div class="p-technologyItemText fr-pc-mt-s fr-sp-mt-s">Des bonnets souples qui s'adaptent aux
+                          corps en développement. En fonction de la taille, nous modifions les bonnets, la hauteur et
+                          l'épaisseur du haut du buste, ce qui permet de trouver ce qu'il vous faut.</div>
+                      </li>
+                      <li class="p-technologyItem fr-pc-py-m fr-sp-py-m">
+                        <div class="-flex-row -flex-row-center -flex-col-center -w-100 -pointHeader2">
+                          <div class="-pointNumber u-uqFont-l -flex-col -flex-col-center">2</div>
+                          <div class="-pointTitle">Élégant et très fonctionnel</div>
+                        </div>
+                        <div class="fr-pc-mt-m fr-sp-mt-m -pc-w-276 -sp-w-240 -sp-mx-auto -mx-auto">
+                          <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                            <picture class="u-imgAdjustBox_inner">
+                              <img class="fr-img lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/pickup_bra02.jpg?20230213"
+                                alt="Stylish and lots of functions" data-expand="300">
+                            </picture>
+                          </figure>
+                        </div>
+                        <div class="p-technologyItemText fr-pc-mt-s fr-sp-mt-s">La partie inférieure présente une coupe
+                          festonnée avec des lignes ondulées. En plus d'être jolie, elle a aussi été pensée pour ne pas
+                          gêner. Pas de coutures, donc pas de pression sur le corps et pas d'inconfort. On a
+                          l'impression de ne rien porter. La matière AIRism réduit l'irritation due à l'humidité et
+                          garde les enfants au sec et dans le confort.</div>
+                      </li>
+                      <li class="p-technologyItem fr-pc-py-m fr-sp-py-m">
+                        <div class="-flex-row -flex-row-center -flex-col-center -w-100 -pointHeader2">
+                          <div class="-pointNumber u-uqFont-l -flex-col -flex-col-center">3</div>
+                          <div class="-pointTitle">Une palette de couleurs joyeuses</div>
+                        </div>
+                        <div class="fr-pc-mt-m fr-sp-mt-m -pc-w-276 -sp-w-240 -sp-mx-auto -mx-auto">
+                          <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                            <picture class="u-imgAdjustBox_inner">
+                              <img class="fr-img lazyload"
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                data-srcset="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/pickup_bra03.jpg?20230213"
+                                alt="A color palette that uplifts the mood" data-expand="300">
+                            </picture>
+                          </figure>
+                        </div>
+                        <div class="p-technologyItemText fr-pc-mt-s fr-sp-mt-s">Des couleurs pastel excitantes. Le
+                          soutien-gorge intime AIRism enveloppe le corps de ses couleurs préférées.</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class=" fr-sp-mt-xl fr-pc-mt-l -mx-auto">
+                $include('Page-RenderGrid', 'pids','464175','count', 8 )$
+              </div>
 
-      <!-- NAV WRAPPER -->
-      <div id="nav-wrapper">
-        <a
-          href="#secrets-of"
-          data-category="airism"
-          data-label="nav: what is airism"
-          data-action="click"
-        >
-          <h4>Les secrets</h4>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="js-trackEventReading" data-label="read_06"></div>
+        <div class="u-fixedAnchorAdjust js-fixedAnchor_4">
+          <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxl fr-sp-mt-xxl">
+            <div class="-flex-col -flex-col-center">
+              <div class="-lineUpRecomme fr-pc-mb-s fr-sp-mb-s">À la une</div>
+            </div>
+            <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Hauts</h2>
+            <h2 class="fr-heading -h2 fr-sp-mt-s fr-pc-mt-s u-align-center">T-shirt en coton AIRism à col rond</h2>
+            <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Même lors des journées les plus chaudes d'été, porter les
+              t-shirts en coton AIRism est un jeu d'enfant.</p>
+            <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+              <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/cotton_crewneck_mv.jpg?20230213"
+                    alt="AIRism Cotton Crew Neck Short Sleeve T-Shirt" data-expand="300">
+                </picture>
+              </figure>
+              <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                <div class="fr-imagePlusText -w-100 -bgNone">
+                  <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                    <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                      <picture class="u-imgAdjustBox_inner">
+                        <img class="fr-img lazyload"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/cotton_crewneck_features.jpg?20230213"
+                          alt="Playful colors and patterns are the main focus of the spring/summer season. A timeless crew neck T-shirt perfectly matches with versatile variations. "
+                          data-expand="300">
+                      </picture>
+                    </figure>
+                  </div>
+                  <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465136">
+                    <a href="" data-product-url="">
+                      <p class="fr-imagePlusText_body fr-pc-mt-s">Ce T-shirt intemporel à col rond est un complément
+                        versatile à la garde-robe des enfants.</p>
+                      <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">ENFANT</p>
+                      <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+              L'avis de nos clients</div> -->
+            <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+              data-pc-option="{&quot;spaceBetween&quot;: 24}"
+              data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+              <!-- <div class="swiper-wrapper -flex-row-center">
+                <div class="swiper-slide -customUserReview ">
+                  <div class="-bubbleBorder">
+                    <div class="-bubble -flex-col fr-sp-py-l fr-sp-px-1g fr-pc-px-m fr-pc-py-l">
+                      <div class="fr-bff-product_reviewStars">
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                      </div>
+                      <div class="fr-bff-userReview_heading -bubbleTitle">
+                        The best cotton t-shirt ever
+                      </div>
+                      <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">
+                        The texture, the weight, the cut all are amazing in this t-shirt, and this simply fits like if
+                        it was tailored. I am looking forward for them to release new colors to buy them all!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fr-bff-userReview_user -userReview">
+                    <img class="-userIcon" alt="user"
+                      src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                    <div class="fr-bff-userReview_userGender">Female</div>
+                    <div class="fr-bff-userReview_userAge">-</div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- BFF編集箇所START -->
+              <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl u-align-center">Articles associés</h3>
+              $include('Page-RenderGrid', 'pids','465138|465137|464201|464126|464130|464202','count', 8 )$
+              <!-- BFF編集箇所END -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+          <h2 class="fr-heading -h2 u-align-center">Sweat à Capuche en Maille AIRism avec Protection UV</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Cette protection anti-UV légère et transportable est parfaite
+            pour le printemps et l'été.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/meshpk_mv.jpg?20230213"
+                  alt="AIRism Mesh UV Protection Full-Zip Hoodie" data-expand="300">
+              </picture>
+            </figure>
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/kids_uvpk_features.jpg?20230213"
+                        alt="UV protection shields kids’ skin from UV rays. Smooth and comfortable even in strong sunlight. The soft AIRism brings Cool-Touch."
+                        data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465160">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">La protection UV protège la peau du soleil, tandis
+                      qu'AIRism offre une sensation de fraîcheur.</p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">ENFANT</p>
+                    <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+            L'avis de nos clients</div>
+          <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+            data-pc-option="{&quot;spaceBetween&quot;: 24}"
+            data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+            <div class="swiper-wrapper -flex-row-center">
+              <div class="swiper-slide -customUserReview ">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">
+                      My child loves it very much
+                    </div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">
+                      Purchased blue. The color, the lightweight comfort, the smooth feel. He loves everything about it
+                      and wear it for all occasions regardless of the season. The fact that it dries quickly after
+                      washing and does not wrinkle is also helpful.
+                    </div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Male</div>
+                  <div class="fr-bff-userReview_userAge">7-9 years</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- BFF編集箇所START -->
+          <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl u-align-center">Articles associés</h3>
+          $include('Page-RenderGrid', 'pids','465161','count', 8 )$
+          <!-- BFF編集箇所END -->
+        </div>
+      </section>
+      <section>
+        <div class="pc-container -main fr-pc-mt-xxxl fr-sp-mt-xxxl fr-sp-px-1g">
+          <h2 class="fr-heading -h2 u-align-center">Top Côtelé AIRism à Soutien-Gorge Intégré</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">AIRism garde les enfants au frais, tandis que les bonnets
+            intégrés offrent un soutien tout en douceur.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/bratank_mv.jpg?20230213"
+                  alt="AIRism Cotton Ribbed Bra Tank Top (Regular)" data-expand="300">
+              </picture>
+            </figure>
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/bratank_features.jpg?20230213"
+                        alt="The cups are sewn to help them stay in place during washing." data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="469062">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">Les bonnets sont cousus pour rester en place au lavage.
+                    </p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">ENFANT</p>
+                    <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="pc-container -main fr-sp-mt-xxxl fr-pc-mt-xxxl fr-sp-px-1g">
+          <h2 class="fr-heading -h2 u-align-center">Sweat à Capuche en Maille AIRism Protection UV</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Protection solaire transportable pour que les petits restent
+            frais et à l'aise.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/baby_uvpk_mv.jpg?20230213"
+                  alt="AIRism UV Protection Mesh Hoodie" data-expand="300">
+              </picture>
+            </figure>
+            <div class="-flex-col">
+              <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                <div class="fr-imagePlusText -w-100 -bgNone">
+                  <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                    <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                      <picture class="u-imgAdjustBox_inner">
+                        <img class="fr-img lazyload"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/baby_uvpk_features.jpg?20230213"
+                          alt="AIRism mesh keeps you fresh and comfortable. UPF 00+*1, the maximum rating*2 in UV protective clothing."
+                          data-expand="300">
+                      </picture>
+                    </figure>
+                  </div>
+                  <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="464602">
+                    <a href="" data-product-url="">
+                      <p>Classé UPF 50+*, l'indice maximal** des vêtements avec protection UV.</p>
+                      <label class="-annotationEnContent fr-sp-xt-xxs fr-pc-xt-xxs">* UPF (ultraviolet Protection
+                        Factor) : indice indiquant le niveau de protection des vêtements contre les UV.</label>
+                      <label class="-annotationEnContent">** L'indice UPF maximal que la réglementation du pays permet
+                        d'atteindre.</label>
+                      <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">BÉBÉ</p>
+                      <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BFF編集箇所START -->
+          <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl u-align-center">Articles associés</h3>
+          $include('Page-RenderGrid', 'pids','468802','count', 8 )$
+          <!-- BFF編集箇所END -->
+        </div>
+      </section>
+      <section>
+        <div class="js-trackEventReading" data-label="read_07"></div>
+        <div class="u-fixedAnchorAdjust js-fixedAnchor_5">
+          <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+            <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Bas</h2>
+            <h2 class="fr-heading -h2 u-align-center">Jogging Ultra Stretch AIRism</h2>
+            <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Un jogging haute performance qui garde les enfants frais et
+              confortables.</p>
+            <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+              <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/jogger_mv.jpg?20230213"
+                    alt="Ultra Stretch AIRism Jogger Pants" data-expand="300">
+                </picture>
+              </figure>
+              <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                <div class="fr-imagePlusText -w-100 -bgNone">
+                  <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                    <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                      <picture class="u-imgAdjustBox_inner">
+                        <img class="fr-img lazyload"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/jogger_features.jpg?20230213"
+                          alt="360-degree stretch for ease of movement." data-expand="300">
+                      </picture>
+                    </figure>
+                  </div>
+                  <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465163">
+                    <a href="" data-product-url="">
+                      <p class="fr-imagePlusText_body fr-pc-mt-s">Extensible à 360 degrés pour faciliter les mouvements.
+                      </p>
+                      <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">ENFANT</p>
+                      <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="js-trackEventReading" data-label="read_08"></div>
+        <div class="u-fixedAnchorAdjust js-fixedAnchor_6">
+          <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+            <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Robes</h2>
+            <h2 class="fr-heading -h2 u-align-center">Robe Sans Manches Évasée AIRism Ultra Stretch</h2>
+            <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">
+              AIRism vous offre fraîcheur et confort.
+            </p>
+            <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+              <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/onepiece_mv.jpg?20230213"
+                    alt="Ultra Stretch AIRism Flare Sleeveless Dress" data-expand="300">
+                </picture>
+              </figure>
+
+              <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl" data-sku="464114">
+                <div class="fr-imagePlusText -w-100 -bgNone">
+                  <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                    <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                      <picture class="u-imgAdjustBox_inner">
+                        <img class="fr-img lazyload"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_kids_baby/onepieces_features.jpg?20230213"
+                          alt="AIRism keeps you fresh and comfortable." data-expand="300">
+                      </picture>
+                    </figure>
+                  </div>
+                  <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone">
+                    <a href="" data-product-url="">
+                      <p class="fr-imagePlusText_body fr-pc-mt-s">AIRism vous offre fraîcheur et confort même lorsque
+                        vous transpirez.</p>
+                      <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">ENFANT</p>
+                      <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+        <a class="fr-linkButton js-trackEvent -white -m" href="$httpsUrl('Search-Show','cgid','IDkf-airism')$"
+          data-label="All_AIRism_m">
+          TOUS LES PRODUITS
         </a>
-        <a
-          href="#all-products"
-          data-category="airism"
-          data-label="nav: all products"
-          data-action="click"
-        >
-          <h4>La collection</h4>
-        </a>
-        <a
-          href="#features"
-          data-category="airism"
-          data-label="nav: features"
-          data-action="click"
-        >
-          <h4>Les propriétés</h4>
-        </a>
       </div>
-
-      <!-- HERO COPY -->
-      <div id="hero-copy">
-        <h2 id="secrets-of">Les secrets</h2>
-        <p class="subheader">Les secrets de son confort</p>
-        <p>
-          Quel est le petit plus d'AIRism ? Le secret réside dans les fibres
-          ultrafines qui absorbent et évacuent instantanément la transpiration.
-          Le tissu fabriqué à partir de ces fibres est si doux que vous pourriez
-          même oublier que vous le portez. Dites adieu aux sensations
-          d'inconfort.
-        </p>
-
-        <div class="wrapper">
-          <div class="block">
-            <div class="blokc-asset">
-              <img
-                width="250px"
-                height="250px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/comfort-1.jpg"
-              />
-            </div>
-            <p>Sèchage ultra rapide.</p>
-          </div>
-
-          <div class="block">
-            <div class="blokc-asset">
-              <img
-                width="250px"
-                height="250px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/comfort-2.jpg"
-              />
-            </div>
-            <p>Une douceur optimale, sans friction.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLLECTION -->
-      <div id="all-products" data-kids-collection="">
-        <h2>La collection</h2>
-
-        <div class="wrapper">
-          <div class="block">
-            <a
-              href="#innerwear"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: k inner"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/lineup_inner.jpg"
-                />
+      <section>
+        <div class="u-fixedAnchorAdjust js-fixedAnchor_12">
+          <div class="pc-container -main">
+            <h2 class="fr-heading -h2 fr-sp-px-1g u-align-center fr-sp-pt-xxxl fr-pc-pt-xxxl">Les caractéristiques
+              d'AIRism</h2>
+            <h3 class="fr-heading -h5 fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m u-align-center">Découvrez les secrets du confort
+              exceptionnel d'AIRism.</h3>
+            <div class="u-align-center u-color-gray500 fr-sp-mx-1g fr-sp-mt-s fr-pc-mt-s">*Les fonctionnalités varient
+              d'un produit à l'autre.</div>
+            <div class="fr-video_container fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m">
+              <div class="fr-video js-video js-trackEvent" data-href="https://www.youtube.com/embed/cFlGxx5EEVc"
+                data-label="All_AIRism_k">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="16:9">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/movie_function.jpg?20230213"
+                      alt="Discover the secrets behind the exceptional comfort of AIRism." data-expand="300">
+                  </picture>
+                </figure>
               </div>
-              <p>Sous-vêtements</p>
-            </a>
-          </div>
-          <div class="block">
-            <a
-              href="#tops"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: k tops"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/lineup_tops.jpg"
-                />
-              </div>
-              <p>Hauts</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- INNERWEAR -->
-      <div class="product-container" id="innerwear">
-        <h2>Sous-vêtements</h2>
-        <div class="product-wrapper" data-sku="453978">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>La douceur du coton rencontre la fonctionnalité de l'AIRism.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: k inner 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: k inner 1"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
+            </div>
+            <div class="-grid -sp-flex-col -sp-gap-15 -pc-gap-24 -pc-row-gap-20 fr-sp-mx-1g fr-sp-mt-xxl fr-pc-mt-xxl">
+              <div class="-flex-row -sp-gap-15">
+                <div class="-pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function01.jpg?20230213"
+                        alt="DRY" data-expand="300">
+                    </picture>
+                  </figure>
                 </div>
-                <div class="feature-copy">
-                  <p>
-                    Extensible et lisse. Mis à jour avec les instructions
-                    d'entretien imprimées, ce qui signifie qu'il n'y a pas
-                    d'étiquette qui gratte.
+                <div class="fr-pc-ml-m">
+                  <p class="fr-pc-mt-s u-font-700">
+                    DRY:
+
                   </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
+                  <p class="fr-pc-mt-s u-font-700">Absorbe et évacue instantanément la transpiration.</p>
+                  <p class="fr-sp-mt-s fr-pc-mt-s">Le tissu sèche rapidement afin de rester sec et frais.</p>
+                  <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">* Gauche : Coton. Droite : AIRism</div>
                 </div>
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="453983">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>Un t-shirt en coton tout simple et confortable.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: k inner 2"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-2.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: k inner 2"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-2-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
+              <div class="-flex-row -sp-gap-15">
+                <div class="-pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function02.jpg?20230213"
+                        alt="SMOOTH TO THE TOUCH" data-expand="300">
+                    </picture>
+                  </figure>
                 </div>
-                <div class="feature-copy">
-                  <p>
-                    Extensible et lisse. Mis à jour avec les instructions
-                    d'entretien imprimées, ce qui signifie qu'il n'y a pas
-                    d'étiquette qui gratte.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
+                <div class="fr-pc-ml-m">
+                  <p class="fr-pc-mt-s u-font-700">Doux au toucher :</p>
+                  <p class="fr-pc-mt-s u-font-700">Glisse contre la peau.</p>
+                  <p class="fr-sp-mt-s fr-pc-mt-s">Les fibres ultrafines évacuent instantanément l'humidité.</p>
+                  <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">* Gauche : Coton. Droite : AIRism</div>
                 </div>
               </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="454078">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>
-              Ce soutien-gorge tout-en-un protège en douceur la zone délicate de
-              la poitrine.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: k inner 3"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-3.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: k inner 3"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-3-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
+              <div class="-flex-row -sp-gap-15">
+                <div class="-pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function03.jpg?20230213"
+                        alt="STRETCH" data-expand="300">
+                    </picture>
+                  </figure>
                 </div>
-                <div class="feature-copy">
-                  <p>Les bonnets souples assurent un soutien parfait.</p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
+                <div class="fr-pc-ml-m">
+                  <p class="fr-pc-mt-s u-font-700">STRETCH :</p>
+                  <p class="fr-pc-mt-s u-font-700">S'étire pour un ajustement parfait.</p>
+                  <p class="fr-sp-mt-s fr-pc-mt-s">Le tissu s'étend verticalement et horizontalement tout en conservant
+                    sa forme.</p>
+                  <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">* T-shirt à col rond pour homme</div>
                 </div>
               </div>
-
-              <div class="customer-review">
-                <p class="review-title">Les avis de nos clients</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  J'ai acheté ce produit il y a 2 semaines pour ma fille et il
-                  est très confortable à porter. J'en ai commandé 2 autres du
-                  même produit. Je recommande fortement ce produit. * traduit du
-                  site anglais.
-                </p>
-                <p class="author">Suji</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="453902">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>Une coupe légèrement ajustée pour les corps en développement.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: k inner 4"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-4.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: k inner 4"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/inner-4-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
+              <div class="-flex-row -sp-gap-15">
+                <div class="-pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function04.jpg?20230213"
+                        alt="COOL TOUCH" data-expand="300">
+                    </picture>
+                  </figure>
                 </div>
-                <div class="feature-copy">
-                  <p>
-                    Construction sans couture pour un toucher naturel. Sensation
-                    de confort et de légèreté.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
+                <div class="fr-pc-ml-m">
+                  <p class="fr-pc-mt-s u-font-700">COOL TOUCH :</p>
+                  <p class="fr-pc-mt-s u-font-700">Sensation de fraîcheur instantanée.</p>
+
+                  <p class="fr-sp-mt-s fr-pc-mt-s">Conçu pour transférer la chaleur loin de votre corps.</p>
                 </div>
               </div>
-
-              <div class="customer-review">
-                <p class="review-title">Les avis de nos clients</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Bonne qualité, ma fille l'aime beaucoup, tellement
-                  confortable. Livraison rapide.Tout est parfait.
-                </p>
-                <p class="author">Jedarin</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- TOPS -->
-      <div class="product-container" id="tops">
-        <h2>Hauts</h2>
-        <div class="product-wrapper" data-sku="454493">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>
-              Faites le plein de T-shirts confortables dans toutes les couleurs.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: k top 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: k top 1"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
+              <div class="-flex-row -sp-gap-15">
+                <div class="-pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function05.jpg?20230213"
+                        alt="DEODORIZING" data-expand="300">
+                    </picture>
+                  </figure>
                 </div>
-                <div class="feature-copy">
-                  <p>
-                    L'aspect du coton, avec un toucher doux et soyeux. AIRism
-                    évacue rapidement l'humidité de la peau pour que les enfants
-                    se sentent frais et à l'aise.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
+                <div class="fr-pc-ml-m">
+                  <p class="fr-pc-mt-s u-font-700">ANTI-ODEUR :</p>
+                  <p class="fr-pc-mt-s u-font-700">Aide à prévenir les odeurs.</p>
+                  <p class="fr-sp-mt-s fr-pc-mt-s">AIRism absorbe, neutralise et élimine les sources d'odeurs.</p>
+                  <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">* Efficace contre les odeurs d'ammoniac,
+                    d'acide acétique, d'acide isovalérique et de nonenal.</div>
                 </div>
               </div>
-
-              <div class="customer-review">
-                <p class="review-title">Les avis de nos clients</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Acheté ceci pour mon enfant de 6 ans se lave bien et il est si
-                  confortable sur lui qu'il adore le porter.
-                </p>
-                <p class="author">Yazz84</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="454513">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>
-              Une couche légère et facile à enfiler avec une protection UV
-              supplémentaire.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: k top 2"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-2.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: k top 2"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-2-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Protège la peau délicate de votre enfant des rayons UV.
-                    Tissu doux et extensible dans toutes les directions.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="454274">
-          <div class="product-hero">
-            <h3 data-product-name=""></h3>
-            <p>
-              Confortable mélange d'AIRism et de coton dans un design ludique.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: k top 3"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-3.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: k top 3"
-              data-action="click"
-              data-product-url=""
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/top-3-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Facile à porter avec des pantalons, des shorts et des jupes.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- FEATURES OF AIRISM -->
-      <div id="features">
-        <h2>Les propriétés</h2>
-        <p class="subheader">
-          Découvrez les secrets du confort exceptionnel d'AIRism.
-        </p>
-        <p class="note">Remarque : les fonctions varient selon les produits.</p>
-
-        <div class="wrapper">
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/function01.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">
-                Absorbe et évacue instantanément la transpiration.
-              </p>
-              <p>Les fibres ultrafines évacuent instantanément l'humidité.</p>
-              <p class="disclaimer">Gauche : AIRism. Droite : Coton</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/function02.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">S'étire pour un ajustement parfait.</p>
-              <p>
-                Environ 2 fois l'étirement horizontal et 1,5 fois l'étirement
-                vertical.
-              </p>
-              <p class="disclaimer">*T-shirt à col ras du cou pour homme</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/function03.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">
-                L'effet désodorisant aide à prévenir les odeurs.
-              </p>
-              <p>Absorbe, neutralise et élimine les sources d'odeurs.</p>
-              <p class="disclaimer">
-                *Efficace contre les odeurs causées par la transpiration.
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/function04.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">Texture lisse sur la peau.</p>
-              <p>Sensation de douceur soyeuse avec un faible frottement.</p>
-              <p class="disclaimer">Gauche : Coton. Droite : AIRism</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/kids/function05.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">Sensation de fraîcheur instantanée.</p>
-              <p>
-                Sa douceur maximise le transfert de chaleur de la peau au tissu.
-              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <script>
-        // Initiate lazy load
-        var pageLazyLoad = new LazyLoad({
-          elements_selector: '[loading=lazy]',
-          use_native: false,
-        });
+  </div>
 
-        var video = document.querySelectorAll('video.responsive');
-        function addSourceToVideo(element, src) {
-          var source = document.createElement('source');
-          source.src = src;
-          source.type = 'video/mp4';
-          console.log(src);
-          element.appendChild(source);
-        }
-        function whichSizeVideo(element, src) {
-          var windowWidth = window.innerWidth
-            ? window.innerWidth
-            : $(window).width();
-          if (windowWidth >= 768) {
-            element.setAttribute('poster', src.dataset.desktopPoster);
-            addSourceToVideo(element, src.dataset.desktopVid);
-          } else {
-            addSourceToVideo(element, src.dataset.mobileVid);
-            element.setAttribute('poster', src.dataset.mobilePoster);
-          }
-        }
-        function videoSize() {
-          if (video !== undefined) {
-            video.forEach(function (element, index) {
-              whichSizeVideo(element, element);
-            });
-          }
-        }
-        videoSize();
-      </script>
 
-      <!--  EMBED CONTENT PAGE FOOTER-->
-      $include('Page-Include', 'cid', 'content-page-footer',
-      'includecustomfiles', true)$
-    </div>
-  </body>
-</html>
+</body>

@@ -1,1163 +1,1494 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1620740758042/css/common.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/css/splide-lg.css"
-      media="(min-width: 1440px)"
-    />
-    <script
-      defer=""
-      src="https://www.uniqlo.com/on/demandware.static/Sites-GB-Site/-/en_GB/v1670846149241/js/lib/splide.min.js"
-      type="text/javascript"
-    ></script>
-    <link rel="stylesheet" href="../css/airism-styles.css" />
+<meta property="og:image"
+  content="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/EN/L3_feature_og_image_AIRism-women.jpg?20230213">
 
-    <script type="module">
-      var sliders = document.querySelectorAll('[data-splide]');
-      if (sliders.length) {
-        for (let slider of sliders) {
-          var splide = new Splide(slider);
-          splide.mount();
-        }
-      }
-    </script>
-    <title>Project name</title>
-  </head>
+<link rel="preload" href="/jp/ja/contents/feature/common/js/ariakedesign-components@1.6.4/main.js" as="script">
+<link rel="stylesheet" href="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/css/index.css?202302131"
+  media="all">
 
-  <body>
-    <!-- COPY TO SALEFORCE FROM HERE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/main.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/uqeu-development/product@latest/fetch-product.css"
-    />
+<link rel="stylesheet" href="/jp/ja/special-feature/feature/common/css/ariakedesign@3.3.0/ariakedesign.css" media="all">
+<script src="/jp/ja/special-feature/feature/common/js/ariakedesign@4.2.1/ariakedesign.js" defer></script>
+<script src="/jp/ja/contents/feature/common/js/ariakedesign-components@1.6.4/main.js" defer></script>
 
-    <div id="container">
-      <!-- START CODING HERE -->
+<script defer=""
+  src="/on/demandware.static/-/Library-Sites-SiteGenesisSharedLibrary/default/vba2363a38825191e1f1f023d25f5ad8f248a90d2/js/product-info-fetch.js"></script>
+<style>
+  .-bubbleBorder::after {
+    left: 23px !important;
+  }
 
-      <!-- NAV -->
-      <div id="tabs-wrapper">
-        <div class="tab active">
-          <a
-            href="airism-women.html"
-            data-cateogry="airism"
-            data-label="women: women-nav"
-            data-action="click"
-          >
-            <h3>DONNA</h3>
-          </a>
-        </div>
-        <div class="tab">
-          <a
-            href="airism-men.html"
-            data-cateogry="airism"
-            data-label="women: men-nav"
-            data-action="click"
-          >
-            <h3>UOMO</h3>
-          </a>
-        </div>
-        <div
-          class="tab"
-          data-cateogry="airism"
-          data-label="women: kids-nav"
-          data-action="click"
-        >
-          <a href="airism-kids.html">
-            <h3>NEONATO E BAMBINO</h3>
-          </a>
-        </div>
+  .-userIcon {
+    margin-left: 17px !important;
+  }
+</style>
+<style>
+  #container .hero-product .l3Grid {
+    -ms-grid-columns: 1fr [1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media only screen and (max-width: 500px) {
+    #container .hero-product .l3Grid {
+      -ms-grid-columns: 1fr [1];
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #container .l3Grid__element--content {
+    display: none !important;
+  }
+
+  #container .productTile__swatchImage {
+    border: 1px solid var(--color-lightGrey);
+    height: var(--height-swatchDimension);
+    vertical-align: middle;
+    width: var(--height-swatchDimension);
+  }
+
+  #container .productTile__titleContainer {
+    height: 100% !important;
+  }
+
+  #container .productTile__titleContainer {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .productTile__priceContainer {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .productTile__swatchList {
+    background: none !important;
+  }
+
+  #container .productTile__textContainer {
+    background: none !important;
+  }
+
+  #container .badges--tile .badge {
+    font-family: UNIQLO PRO !important;
+  }
+
+  #container .l3Grid {
+    gap: 10px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: left;
+    font-weight: 500;
+    -ms-grid-columns: 1fr [4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media only screen and (max-width: 500px) {
+    #container .l3Grid {
+      padding-left: 3%;
+      padding-right: 3%;
+      -ms-grid-columns: 1fr [2];
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+    }
+
+    #container .l3Grid .productTile__swatchImage {
+      height: 20px;
+      width: 20px;
+    }
+
+    #container .l3Grid .productTile__plus {
+      height: 14px;
+    }
+  }
+</style>
+<style>
+  body {
+    font-weight: 400 !important;
+  }
+
+  .fr-tab-content {
+    display: none;
+  }
+
+  .is-show {
+    display: block;
+  }
+
+  body[data-bff-version=v5] .main_inner {
+    padding-top: 0px !important;
+  }
+
+  .main-inner {
+    padding-top: 0px !important;
+  }
+
+  .fr-fixedAnchor.-isFixed {
+    top: 72px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .fr-fixedAnchor.-isFixed {
+      top: 50px;
+    }
+  }
+
+  @media screen and (min-width: 813px) {
+
+    .fr-modalParent_contents,
+    .fr-modalParent_contentsInner {
+      top: 53%;
+    }
+
+    .-default .fr-anchorButton_item {
+      width: calc((100% - 3px) / 3);
+    }
+
+    .-lineUpPannel {
+      grid-template-columns: repeat(5, minmax(0px, 165px));
+    }
+  }
+
+  .fr-modalParent_contents,
+  .fr-modalParent_contentsInner {
+    z-index: 9999
+  }
+</style>
+
+<div class="wrapper" id="container">
+  <main class="main">
+    <div class="fr-fixedAnchor js-fr-fixedAnchor -loading"
+      data-config="{&quot;.js-fixedAnchor_1&quot;: 0, &quot;.js-fixedAnchor_2&quot;: 0, &quot;.js-fixedAnchor_3&quot;: 0, &quot;.js-fixedAnchor_12&quot;: 0, &quot;.js-fixedAnchor_99&quot;: 0}">
+      <div class="fr-fixedAnchor_container js-fr-fixedAnchor_container">
+        <ul class="fr-fixedAnchor_inner js-fr-fixedAnchor_inner">
+
+          <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+              class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+              data-link=".js-fixedAnchor_2" data-label="Tapable_Secret_w">I segreti di AIRism</a></li>
+          <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+              class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+              data-link=".js-fixedAnchor_3" data-label="Tapable_Lineup__w">Collezione</a></li>
+          <li class="fr-fixedAnchor_item js-fr-fixedAnchor_item"><a
+              class="fr-fixedAnchor_itemLink js-fr-fixedAnchor_itemLink js-smoothScroll js-trackEvent"
+              data-link=".js-fixedAnchor_12" data-label="Tapable_Function_w">Caratteristiche</a></li>
+        </ul>
       </div>
-
-      <h2 class="title" style="text-transform: initial">AIRism</h2>
-      <div class="hero">
-        <video
-          muted=""
-          autoplay=""
-          playsinline=""
-          loop=""
-          class="responsive"
-          data-desktop-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/hero-poster.jpg"
-          data-mobile-poster="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/mobile-poster.jpg"
-          data-desktop-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/pc-l1-pickup3-airism-factory-video_1.mp4"
-          data-mobile-vid="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/homepage/may/230501/mb-l1-pickup3-airism-factory-video_1.mp4"
-        ></video>
-      </div>
-
-      <!-- NAV WRAPPER -->
-      <div id="nav-wrapper">
-        <a
-          href="#secrets-of"
-          data-category="airism"
-          data-label="nav: what is airism"
-          data-action="click"
-        >
-          <h4>Che cos'è AIRism?</h4>
-        </a>
-        <a
-          href="#all-products"
-          data-category="airism"
-          data-label="nav: all products"
-          data-action="click"
-        >
-          <h4>Scopri la collezione</h4>
-        </a>
-        <a
-          href="#features"
-          data-category="airism"
-          data-label="nav: features"
-          data-action="click"
-        >
-          <h4>Proprietà</h4>
-        </a>
-      </div>
-
-      <!-- HERO COPY -->
-      <div id="hero-copy">
-        <h2 id="secrets-of">Che cos'è AIRism?</h2>
-        <p class="subheader">
-          I segreti di una tecnologia in grado di garantire comfort e freschezza
-        </p>
-        <p>
-          Il segreto delle straordinarie prestazioni offerte dai tessuti AIRism
-          sta nelle loro fibre ultrasottili, in grado di assorbire ed eliminare
-          istantaneamente il sudore. Quest'estate, di' addio a umidità e
-          disagio.
-        </p>
-
-        <div class="wrapper">
-          <div class="block">
-            <div class="blokc-asset">
-              <img
-                width="250px"
-                height="250px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-1.jpg"
-              />
-            </div>
-            <p>Rapida asciugatura del sudore.</p>
-          </div>
-
-          <div class="block">
-            <div class="blokc-asset">
-              <img
-                width="250px"
-                height="250px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/comfort-2.jpg"
-              />
-            </div>
-            <p>Tessuti lisci, morbidi e freschi sulla pelle.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLLECTION -->
-      <div id="all-products">
-        <h2>Scopri la collezione</h2>
-
-        <div class="wrapper">
-          <div class="block">
-            <a
-              href="#innerwear"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: w inner"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_inner.jpg"
-                />
-              </div>
-              <p>Capi intimi e strati interni</p>
-            </a>
-          </div>
-          <div class="block">
-            <a
-              href="#tops"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: w tops"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_tops.jpg"
-                />
-              </div>
-              <p>Top</p>
-            </a>
-          </div>
-          <div class="block">
-            <a
-              href="#bottoms"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: w bottoms"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_bottoms.jpg"
-                />
-              </div>
-              <p>Leggings e pantaloni da jogging</p>
-            </a>
-          </div>
-          <div class="block">
-            <a
-              href="#loungewear"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: w loungewear"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/lineup_loungewear.jpg"
-                />
-              </div>
-              <p>Capi loungewear</p>
-            </a>
-          </div>
-          <div class="block">
-            <a
-              href="#ptt"
-              data-category="airism"
-              data-action="click"
-              data-label="collection: w Princesse tam tam"
-            >
-              <div class="block-asset">
-                <img
-                  width="200px"
-                  height="200px"
-                  loading="lazy"
-                  class="lazy"
-                  data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/ptt-lineup.jpg"
-                />
-              </div>
-              <p>Princesse tam tam</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- INNERWEAR -->
-      <div class="product-container" id="innerwear">
-        <h2>Capi intimi e strati interni</h2>
-        <div class="product-wrapper" data-sku="457518">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Canotta che funge contemporaneamente da reggiseno e top, con in
-              più tutta la freschezza di AIRism.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: w inner 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: w inner 1"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>Liscia e morbida sulla pelle.</p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Estremamente comoda e leggera, offre sostegno sufficiente per
-                  un reggiseno pur essendo comoda come un top. Asciuga molto
-                  rapidamente ed è confezionata in un morbido tessuto di grande
-                  effetto!
-                </p>
-                <p class="author">TheoJJ</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid',
-          'pids','457308|457524|457477|457519','count', 4)$
-        </div>
-
-        <div class="product-wrapper" data-sku="457313">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Design senza cuciture e scollatura ampia e profonda per agevolare
-              i giochi di sovrapposizioni.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: w inner 2"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: w inner 2"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-2-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Dotato di colletto termosaldato senza cuciture, questo capo
-                    offre una vestibilità confortevole e risulta invisibile al
-                    di sotto di altri indumenti.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Finalmente ho a disposizione un capo intimo che assorbe il
-                  sudore durante le passeggiate e non costa un occhio della
-                  testa. Fresco e comodo, rimane nascosto anche in presenza di
-                  ampie scollature. Non sarà l'ultimo che acquisterò
-                </p>
-                <p class="author">Sunrisesara</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid',
-          'pids','458001|458264|456265|457939','count', 4)$
-        </div>
-
-        <div class="product-wrapper" data-sku="457321">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Il nostro nuovo top a coste senza maniche confezionato in un
-              tessuto misto seta dalla straordinaria morbidezza.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: w inner 3"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: w inner 3"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-3-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>Perfetto per giochi di sovrapposizioni.</p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Adoro il colore di questa canotta! È morbidissima e offre una
-                  vestibilità impeccabile.
-                </p>
-                <p class="author">Lisacw</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid',
-          'pids','457308|457524|457477|457519','count', 4)$
-        </div>
-
-        <div class="product-wrapper" data-sku="455288">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>Slip confezionati in tessuto AIRism morbido e delicato.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="innerwear: w inner 4"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="innerwear: w inner 4"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/inner-4-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Modello privo di cuciture, che rimane invisibile al di sotto
-                    degli abiti.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Sono slip davvero magici, perché non mi accorgo neppure di
-                  averli indosso. Il tessuto ha una texture piacevolissima e
-                  un'elasticità ottimale e offre un comfort ideale. Ne ho
-                  comprati due paia, solo per acquistarne altre due subito dopo.
-                </p>
-                <p class="author">HannahDAV</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid',
-          'pids','455290|455291|457143|455320','count', 4)$
-        </div>
-      </div>
-
-      <!-- TOPS -->
-      <div class="product-container" id="tops">
-        <h2>TOP</h2>
-        <div class="product-wrapper" data-sku="456261">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Scopri la protezione solare sotto forma di indumento, grazie a una
-              tecnologia in grado di bloccare il 90% dei raggi UV.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: w top 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: w top 1"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Struttura in mesh traspirante, ora dotata di proprietà
-                    anti-odore. Capo tascabile, facilmente ripiegabile nella
-                    sacca da trasporto integrata.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  La mia pelle è estremamente sensibile al sole, per cui
-                  apprezzo particolarmente questo giubbotto. È molto piacevole
-                  sulla pelle: non tiene troppo caldo, anzi è addirittura
-                  rinfrescante.
-                </p>
-                <p class="author">Tradotto dal nostro sito francese</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="458001">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              La nostra amatissima T-shirt dal taglio ampio e squadrato.
-              Confezionata in fresco tessuto AIRism.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: w top 2"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: w top 2"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-2-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    AIRism è un tessuto incredibilmente leggero e dalle elevate
-                    prestazioni, concepito con un'unica finalità: garantire un
-                    comfort costante in qualsiasi situazione.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Le influencer hanno ragione, questa t-shirt non ha rivali! Di
-                  solito ho problemi con le T-shirt Uniqlo, ma questa è
-                  perfetta. Oversize, comoda e di facile manutenzione.
-                </p>
-                <p class="author">megacino</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="456265">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Questo top fresco e leggerissimo rappresenta un'opzione ideale
-              come capo activewear.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="tops: w top 3"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="tops: w top 3"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/top-3-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>Lucido tessuto dalla caduta impeccabile.</p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Il tessuto è morbido e liscio, ideale per l'attività sportiva
-                </p>
-                <p class="author">Chiara000</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid', 'pids','458264|457939','count', 4)$
-        </div>
-      </div>
-
-      <!-- BOTTOMS -->
-      <div class="product-container" id="bottoms">
-        <h2>Leggings e pantaloni da jogging</h2>
-        <div class="product-wrapper" data-sku="455938">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>Morbidi leggings a garanzia del massimo comfort.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="bottoms: w bottom 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="bottom: w bottom 1"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Tessuto morbido e spesso dalla texture opaca. Pratiche
-                    tasche.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Sono i leggings migliori che abbia mai acquistato. Il
-                  materiale è morbidissimo e comodissimo. Il materiale è di
-                  buona qualità e non forma pieghe all'altezza del cavallo. In
-                  più, la fascia in una vita non è troppo stretta, cosa che
-                  (almeno per quanto mi riguarda!) evita di comprimere
-                  eccessivamente l'addome con un effetto antiestetico. Sono alta
-                  soltanto 1,57 m: mi vanno bene, ma probabilmente starebbero
-                  ancora meglio a una persona leggermente più alta. Porto la
-                  taglia 48 e una M mi entra comodamente, ma probabilmente
-                  andrebbe bene anche a chi porta una taglia inferiore. Mi
-                  piacciono così tanto che ho finito per acquistarne quattro
-                  paia!
-                </p>
-                <p class="author">Goatie</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="product-wrapper" data-sku="455942">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>
-              Ora dotati di tasca con zip sul retro per una praticità ancora
-              maggiore.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="bottoms: w bottom 2"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="bottom: w bottom 2"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/bottom-2-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>
-                    Capo elegante e confortevole, confezionato in tessuto
-                    estensibile in tutte le direzioni, ideale per uno stile di
-                    vita attivo.
-                  </p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Belli e leggeri, ottima vestibilità, tre tasche e materiale di
-                  buona qualità che non si restringe dopo il lavaggio
-                </p>
-                <p class="author">Kulie13</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid', 'pids','459795|455939|459249','count', 4)$
-        </div>
-      </div>
-
-      <!-- LOUNGEWEAR -->
-      <div class="product-container" id="loungewear">
-        <h2>Loungewear</h2>
-        <div class="product-wrapper" data-sku="454532">
-          <div class="product-hero">
-            <h3 data-product-name></h3>
-            <p>AIRism garantisce comfort e freschezza per tutta la notte.</p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="loungewear: w loungewear 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-          <div class="product-content">
-            <a
-              href=""
-              data-category="airism"
-              data-label="loungewear: w loungewear 1"
-              data-action="click"
-              data-product-url
-            >
-              <div class="product-feature">
-                <div class="feature-asset">
-                  <img
-                    data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/loungewear-1-feature.jpg"
-                    width="170px"
-                    height="170px"
-                    loading="lazy"
-                    class="lazy"
-                  />
-                </div>
-                <div class="feature-copy">
-                  <p>Ora dotato di pratiche tasche laterali e sul petto.</p>
-                  <h4 data-product-price></h4>
-                  <h4 data-product-saleprice></h4>
-                </div>
-              </div>
-
-              <div class="customer-review">
-                <p class="review-title">La parola ai clienti</p>
-                <p class="stars">★★★★★</p>
-                <p>
-                  Pigiama perfetto, comodissimo e ideale per le ore di sonno. Ne
-                  acquisterò un altro al più presto!
-                </p>
-                <p class="author">Tradotto dal nostro sito tedesco</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="related-products">
-          <h3>Prodotti in primo piano</h3>
-          $include('Page-RenderGrid', 'pids','462019|457659','count', 4)$
-        </div>
-      </div>
-
-      <!-- PRINCESS TAM TAM -->
-      <div class="product-container" id="ptt">
-        <h2>Princesse tam tam</h2>
-
-        <div data-sku="463595">
-          <div class="product-hero">
-            <!-- <h3 data-product-name></h3> -->
-            <p class="ptt-p">
-              Princesse tam tam è un marchio francese fatto dalle donne, per le
-              donne. Scopri i nuovi capi Princesse tam tam per lo sport che
-              uniscono l'eleganza alla funzionalità dell'abbigliamento sportivo
-              AIRism.
-            </p>
-            <a
-              href=""
-              data-product-url=""
-              data-category="airism"
-              data-action="click"
-              data-label="Princesse tam tam: w Princesse tam tam 1"
-            >
-              <img
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/ptt-hero.jpg"
-                width="650px"
-                height="650px"
-                loading="lazy"
-                class="lazy"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="related-products">
-          <h3>Scopri la collezione</h3>
-          $include('Page-RenderGrid',
-          'pids','463595|463598|467167|463596','count', 4)$
-        </div>
-      </div>
-
-      <!-- FEATURES OF AIRISM -->
-      <div id="features">
-        <h2>Proprietà</h2>
-        <p class="subheader">Che cos'è che rende AIRism così confortevole?</p>
-        <p class="note">
-          Le proprietà variano a seconda dei capi della collezione.
-        </p>
-
-        <div class="wrapper">
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function01.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">
-                Materiale in grado di assorbire ed eliminare il sudore.
-              </p>
-              <p>Fibre ultrasottili che eliminano rapidamente l'umidità.</p>
-              <p class="disclaimer">Sinistra: cotone. Destra: AIRism</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function02.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">
-                Proprietà stretch per una vestibilità ottimale.
-              </p>
-              <p>
-                Tasso di espansione pari a circa il 200% in orizzontale e al
-                150% in verticale*.
-              </p>
-              <p class="disclaimer">
-                *Dati riferiti alla T-shirt AIRism uomo a maniche corte e scollo
-                tondo
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function03.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">Funzionalità anti-odore.</p>
-              <p>Contribuisce a eliminare i cattivi odori dovuti al sudore.</p>
-              <p class="disclaimer">
-                Efficace contro l'odore di ammoniaca, acido acetico, acido
-                isovalerico e nonenale.
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function04.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">Tessuto liscio sulla pelle.</p>
-              <p>Attrito ridotto a garanzia della massima morbidezza.</p>
-              <p class="disclaimer">Sinistra: cotone. Destra: AIRism</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature-asset">
-              <img
-                width="300px"
-                height="300px"
-                loading="lazy"
-                class="lazy"
-                data-src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2023/content-pages/airism/women/function05.jpg"
-              />
-            </div>
-            <div class="feature-copy">
-              <p class="feature-title">Istantanea sensazione di freschezza.</p>
-              <p>
-                Tessuto liscio che ottimizza il trasferimento di calore dalla
-                pelle.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        // Initiate lazy load
-        var pageLazyLoad = new LazyLoad({
-          elements_selector: '[loading=lazy]',
-          use_native: false,
-        });
-
-        var video = document.querySelectorAll('video.responsive');
-        function addSourceToVideo(element, src) {
-          var source = document.createElement('source');
-          source.src = src;
-          source.type = 'video/mp4';
-          console.log(src);
-          element.appendChild(source);
-        }
-        function whichSizeVideo(element, src) {
-          var windowWidth = window.innerWidth
-            ? window.innerWidth
-            : $(window).width();
-          if (windowWidth >= 768) {
-            element.setAttribute('poster', src.dataset.desktopPoster);
-            addSourceToVideo(element, src.dataset.desktopVid);
-          } else {
-            addSourceToVideo(element, src.dataset.mobileVid);
-            element.setAttribute('poster', src.dataset.mobilePoster);
-          }
-        }
-        function videoSize() {
-          if (video !== undefined) {
-            video.forEach(function (element, index) {
-              whichSizeVideo(element, element);
-            });
-          }
-        }
-        videoSize();
-      </script>
-
-      <!--  EMBED CONTENT PAGE FOOTER-->
-      $include('Page-Include', 'cid', 'content-page-footer',
-      'includecustomfiles', true)$
     </div>
-  </body>
-</html>
+    <div class="main_inner -noMaxWidth">
+      <div class="pc-container -main">
+        <nav class="fr-tabs -gender">
+          <ul class="fr-tabs_inner">
+            <li class="fr-tabs_item -active"><a
+                class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m js-trackEvent fr-sp-px-05g u-uqFont-r">DONNA</a>
+            </li>
+            <li class="fr-tabs_item"><a
+                class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m js-trackEvent fr-sp-px-05g u-uqFont-r"
+                href="airism-men.html" data-label="Internal_Men_w">UOMO</a></li>
+            <li class="fr-tabs_item"><a
+                class="fr-tabs_itemLink fr-sp-py-s fr-pc-py-s fr-pc-px-m fr-sp-px-05g u-uqFont-r"
+                href="airism-kids.html" data-label="Internal_Kids_w">BAMBINO</a></li>
+          </ul>
+        </nav>
+        <h1 class="fr-heading -h1 fr-sp-px-1g fr-sp-py-l fr-pc-my-l">AIRism: la tua arma segreta per un comfort assoluto
+        </h1>
+        <div class="u-pc-w1176 fr-video_container fr-pc-mt-xxl">
+          <div class="u-only-sp fr-videoAutoPlay_wrapper js-videoAutoPlayWrapper js-switchVideoWrapper"
+            data-pc-aspect-ratio="airism" data-sp-aspect-ratio="3:4">
+            <video class="fr-videoAutoPlay js-videoAutoPlay js-switchVideo"
+              data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/movie/women/240115_UNIQLO_AIRism-Women15s-Vert-Gene_edit.mp4"
+              autoplay="" loop="" playsinline="" muted="" preload="auto"></video>
+
+            <button class="fr-videoAutoPlay_button -play js-playVideoButton" data-play-status="play"></button>
+            <button class="fr-videoAutoPlay_button -sound js-soundVideoButton" data-sound-status="muted"></button>
+          </div>
+          <div class="u-only-pc fr-videoAutoPlay_wrapper js-videoAutoPlayWrapper js-switchVideoWrapper"
+            data-pc-aspect-ratio="airism" data-sp-aspect-ratio="3:4">
+            <video class="fr-videoAutoPlay js-videoAutoPlay js-switchVideo"
+              data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/movie/women/240115_UNIQLO_AIRism-Women15s-Gene.mp4"
+              autoplay="" loop="" playsinline="" muted="" preload="auto"></video>
+            <button class="fr-videoAutoPlay_button -play js-playVideoButton" data-play-status="play"></button>
+            <button class="fr-videoAutoPlay_button -sound js-soundVideoButton" data-sound-status="muted"></button>
+          </div>
+        </div>
+        <div class="js-trackEventReading" data-label="read_01"></div>
+        <div class="fr-sp-mb-m fr-pc-mb-m">
+          <ul class="fr-anchorButton -default -length-4 js-fixedAnchorStart">
+
+            <li class="fr-anchorButton_item">
+              <a class="js-trackEvent fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll"
+                data-link=".js-fixedAnchor_2" data-label="Tapable_Secret_w">I segreti di AIRism</a>
+            </li>
+            <li class="fr-anchorButton_item">
+              <a class="js-trackEvent fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll"
+                data-link=".js-fixedAnchor_3" data-label="Tapable_Lineup__w">Collezione</a>
+            </li>
+            <li class="fr-anchorButton_item">
+              <a class="js-trackEvent fr-anchorButton_itemText fr-sp-py-m fr-sp-px-1g fr-pc-py-s fr-pc-px-s js-smoothScroll"
+                data-link=".js-fixedAnchor_12" data-label="Tapable_Function_w">Caratteristiche</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="js-trackEventReading" data-label="read_02"></div>
+        <!-- THE SECRETS OF AIRISM -->
+        <section class="u-fixedAnchorAdjust js-fixedAnchor_2">
+          <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl u-align-center">I segreti di AIRism</h2>
+          <p class="fr-sp-px-1g fr-sp-my-m fr-pc-my-m u-align-center">Le fibre aggregate e ultrafini assorbono e
+            disperdono rapidamente il sudore. Inoltre, AIRism ha una texture incredibilmente liscia e piacevole sulla
+            pelle.</p>
+          <div class="fr-sp-px-1g -flex-row -pc-gap-24 -sp-gap-15 -flex-row-center">
+            <div class="-flex-col -pc-w-276 -sp-w-165 -flex-col-center">
+              <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/comfort01.jpg?20230213"
+                    alt="Quick Drying" data-expand="300">
+                </picture>
+              </figure>
+              <p class="fr-sp-px-1g fr-pc-mt-s fr-sp-mt-s">Asciugatura rapida</p>
+            </div>
+            <div class="-flex-col -pc-w-276 -sp-w-165 -flex-col-center">
+              <figure class="u-imgAdjustBox -pc-w-276" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/comfort02.jpg?20230213"
+                    alt="Smooth Texture" data-expand="300">
+                </picture>
+              </figure>
+              <p class="fr-sp-px-1g fr-pc-mt-s fr-sp-mt-s">Texture liscia e setosa</p>
+            </div>
+          </div>
+          <div class="u-fixedAnchorAdjust js-fixedAnchor_3">
+            <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl u-align-center">Collezione</h2>
+            <div class="fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m -lineUpPannel -pc-gap-24 -sp-gap-15 -flex-row-center">
+              <div class="fr-sp-mb-xs fr-pc-mb-xs -lineUpRecomme">In Evidenza</div>
+              <a href="#" data-label="Anchor_Innerwear_w"
+                class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-165 -flex-col-center js-smoothScroll"
+                data-link=".js-fixedAnchor_4">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/lineup_inner.png?20230213"
+                      alt="Innerwear" data-expand="300">
+                  </picture>
+                </figure>
+                <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Canotte & Maglie</h5>
+                <img alt="arrow" src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg">
+              </a>
+              <a href="#" data-label="Anchor_Bratop_shorts_w"
+                class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-165 -flex-col-center js-smoothScroll"
+                data-link=".js-fixedAnchor_7">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/lineup_bratop.png?20230213"
+                      alt="Bra Tops Underwear" data-expand="300">
+                  </picture>
+                </figure>
+                <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Canotte con Reggiseno & Slip
+                </h5>
+                <img alt="arrow" src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg">
+              </a>
+              <a href="#" data-link=".js-fixedAnchor_8" data-label="Anchor_Tops_w"
+                class="js-trackEvent -lineUpContents -flex-col -pc-w-165 -sp-w-165 -flex-col-center js-smoothScroll">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/lineup_tops.png?20230213"
+                      alt="Tops" data-expand="300">
+                  </picture>
+                </figure>
+                <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Felpe & T-shirt</h5>
+                <img alt="arrow" src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg">
+              </a>
+              <a href="#" data-link=".js-fixedAnchor_9" data-label="Anchor_Bottoms_w"
+                class="js-trackEvent -lineUpContents2 -flex-col -pc-w-165 -sp-w-165 -flex-col-center js-smoothScroll">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/lineup_bottoms.png?20230213"
+                      alt="Bottoms" data-expand="300">
+                  </picture>
+                </figure>
+                <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Pantaloni, Leggings &amp;
+                  Shorts</h5>
+                <img alt="arrow" src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg">
+              </a>
+              <a href="#" data-link=".js-fixedAnchor_10" data-label="Anchor_Dress_w"
+                class="js-trackEvent -lineUpContents2 -flex-col -pc-w-165 -sp-w-165 -flex-col-center js-smoothScroll">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/lineup_onepiece.png?20230213"
+                      alt="Dresses" data-expand="300">
+                  </picture>
+                </figure>
+                <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s u-align-center">Vestiti</h5>
+                <img alt="arrow" src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow.svg">
+              </a>
+            </div>
+          </div>
+          <div class="js-trackEventReading" data-label="read_03"></div>
+
+          <!-- INNERWEAR -->
+          <div class="u-align-center u-fixedAnchorAdjust js-fixedAnchor_4">
+            <h2 class="fr-heading -h2 fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl">Canotte & Maglie</h2>
+            <p class="fr-sp-px-1g fr-pc-my-m fr-sp-my-m">Due tessuti tra cui scegliere</p>
+          </div>
+        </section>
+
+        <!-- TYPES OF AIRISM -->
+        <section>
+          <div class="-flex-row -flex-row-center -sp-width-100">
+            <a href="#"
+              class="-flex-col -flex-col-center -bgAirismAnchor -pc-w-240 -pc-px-50 fr-pc-py-m fr-sp-py-m -sp-width-100 js-smoothScroll js-trackEvent"
+              data-link=".js-fixedAnchor_5" data-label="Anchor_Material_AIRism_w">
+              <figure class="u-imgAdjustBox -sp-w-105" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/inner_lineup_airism.png?20230213"
+                    alt="AIRism" data-expand="300">
+                </picture>
+              </figure>
+              <div class="fr-sp-my-s fr-pc-my-s -br u-align-center">
+                <h5 class="fr-heading -h5 -accordion -flex-col -flex-row-center">AIRism</h5>
+              </div>
+              <img alt="arrow" class="-arrow"
+                src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow_white.svg">
+            </a>
+            <a class="js-trackEvent -flex-col -flex-col-center -bgUvCutAnchor -pc-w-240 -pc-px-50 fr-pc-py-m fr-sp-py-m -sp-width-100 js-smoothScroll"
+              href="#" data-link=".js-fixedAnchor_6" data-label="Anchor_Material_UV_w">
+              <figure class="u-imgAdjustBox -sp-w-105" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/inner_lineup_silkblend.png?20230213"
+                    alt="AIRism UV Protection" data-expand="300">
+                </picture>
+              </figure>
+              <h5 class="fr-heading -h5 -accordion fr-sp-my-s fr-pc-my-s -br u-align-center">AIRIsm Protezione dagli UV
+                (Misto Seta)</h5>
+              <img alt="arrow" class="-arrow"
+                src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/arrow_blue.svg">
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- AIRISM -->
+    <section class="fr-pc-mt-xxxl fr-sp-mt-xxxl">
+      <div class="js-fixedAnchor_5 u-fixedAnchorAdjust">
+        <div class="-bgAirism fr-pc-pb-xxl fr-sp-pb-xxl ">
+          <div class="fr-pc-py-xl fr-sp-py-xl -bgAirismStart u-align-center">
+            <h2 class="fr-heading -h2 fr-sp-px-1g">AIRism</h2>
+            <p class="fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m">AIRism assorbe e lascia traspirare il sudore per una sensazione
+              di freschezza duratura.</p>
+          </div>
+          <div class="pc-container -main">
+
+            <div class="fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl">
+              <h2 class="fr-heading -h2 u-align-center">Canotta AIRism</h2>
+              <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Rimane invisibile sotto gli indumenti, assicurandoti un
+                look pulito.</p>
+
+              <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+                <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/tanktop_mv.jpg?20230213"
+                      alt="AIRism Sleeveless Top" data-expand="300">
+                  </picture>
+                </figure>
+
+                <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                  <div class="fr-imagePlusText -w-100 -bgNone">
+                    <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                      <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                        <picture class="u-imgAdjustBox_inner">
+                          <img class="fr-img lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/tanktop_features.jpg?20230213"
+                            alt="Seamless neckline feels gentle on skin." data-expand="300">
+                        </picture>
+                      </figure>
+                    </div>
+                    <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone"
+                      data-sku="464446">
+                      <a href="" data-product-url="">
+                        <p class="fr-imagePlusText_body u-only-pc fr-pc-mt-s">Le cuciture della scollatura non irritano
+                          la pelle.</p>
+                        <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                        <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m">Recensioni dei
+                clienti</div>
+              <div class="swiper-container js-carousel -bgAirism" data-reviews-length="3" data-pc-panel="3"
+                data-sp-panel="1.1" data-pc-option="{&quot;spaceBetween&quot;: 24}"
+                data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide -customUserReview ">
+                    <div class="-bubbleBorder">
+                      <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                        <div class="fr-bff-product_reviewStars">
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                        </div>
+                        <div class="fr-bff-userReview_heading -bubbleTitle">Invisibile</div>
+                        <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Ho comprato questo articolo in vista della
+                          stagione calda e di un matrimonio a cui andrò il mese prossimo. Credo che questa canottiera,
+                          così sottile, si nasconderà perfettamente sotto il vestito elegante.</div>
+                      </div>
+                    </div>
+                    <div class="fr-bff-userReview_user -userReview">
+                      <img class="-userIcon" alt="user"
+                        src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                      <div class="fr-bff-userReview_userGender">Mic78</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide -customUserReview">
+                    <div class="-bubbleBorder">
+                      <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                        <div class="fr-bff-product_reviewStars">
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                        </div>
+                        <div class="fr-bff-userReview_heading -bubbleTitle">Ottimo prodotto</div>
+                        <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Il tessuto è molto gradevole, il taglio
+                          perfetto. Ho ripreso un secondo colore perché molto comoda e pratica.</div>
+                      </div>
+                    </div>
+                    <div class="fr-bff-userReview_user -userReview">
+                      <img class="-userIcon" alt="user"
+                        src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                      <div class="fr-bff-userReview_userGender">Paoletta27</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide -customUserReview">
+                    <div class="-bubbleBorder">
+                      <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                        <div class="fr-bff-product_reviewStars">
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                          <div class="fr-bff-product_reviewStar -active"></div>
+                        </div>
+                        <div class="fr-bff-userReview_heading -bubbleTitle">La migliore canottiera!</div>
+                        <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">L'ho acquistata qualche tempo fa in beige e
+                          e la indosso sotto le camicie ecc. Mi è piaciuta così tanto che ho comprato anche il nero. Non
+                          sembra nemmeno di indossarle, il materiale è così morbido e la vestibilità è perfetta.
+                          Consigliato.</div>
+                      </div>
+                    </div>
+                    <div class="fr-bff-userReview_user -userReview">
+                      <img class="-userIcon" alt="user"
+                        src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                      <div class="fr-bff-userReview_userGender">MuMac</div>
+                      <!-- <div class="fr-bff-userReview_userAge">35-44</div> -->
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">Prodotti in
+                evidenza</h3>
+              $include('Page-RenderGrid', 'pids','464446|464442','count', 8 )$
+            </div>
+          </div>
+          <div class="pc-container -main">
+            <h2 class="fr-heading -h2 fr-sp-mt-xxxl fr-pc-mt-xxxl u-align-center">Canotta AIRism</h2>
+            <p class="fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m u-align-center">Tecnologia DRY ad asciugatura rapida, Cool Touch
+              e proprietà antiodore per il massimo comfort.</p>
+            <div
+              class="fr-sp-px-1g fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+              <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                <picture class="u-imgAdjustBox_inner">
+                  <img class="fr-img lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/camisole_mv.jpg?20230213"
+                    alt="AIRism Camisole" data-expand="300">
+                </picture>
+              </figure>
+              <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                <div class="fr-imagePlusText -w-100 -bgNone">
+                  <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                    <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                      <picture class="u-imgAdjustBox_inner">
+                        <img class="fr-img lazyload"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/camisole_features.jpg?20230213"
+                          alt="Stretch fabric with a smooth feel" data-expand="300">
+                      </picture>
+                    </figure>
+                  </div>
+                  <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="464442">
+                    <a href="" data-product-url="">
+                      <p class="fr-imagePlusText_body fr-pc-mt-s">Tessuto elasticizzato dalla texture liscia e setosa.
+                      </p>
+                      <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                      <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m">Recensioni dei
+              clienti</div>
+            <div class="swiper-container js-carousel fr-sp-px-1g" data-reviews-length="3" data-pc-panel="3"
+              data-sp-panel="1.1" data-pc-option="{&quot;spaceBetween&quot;: 24}"
+              data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide -customUserReview ">
+                  <div class="-bubbleBorder">
+                    <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                      <div class="fr-bff-product_reviewStars">
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                      </div>
+                      <div class="fr-bff-userReview_heading -bubbleTitle">La adoro!</div>
+                      <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Canottiera super, che non fa sudare! Rimane
+                        fresca per tutto il giorno. Da indossare sotto una maglia. L'ho comprata in nero e in beige. Ne
+                        comprerò altre. Si asciuga rapidamente. La consiglio vivamente perché la tecnologia c'è e
+                        funziona.</div>
+                    </div>
+
+                  </div>
+                  <div class="fr-bff-userReview_user -userReview">
+                    <img class="-userIcon" alt="user"
+                      src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                    <div class="fr-bff-userReview_userGender">Fafa93420</div>
+                    <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Francia</div>
+                  </div>
+                </div>
+                <div class="swiper-slide -customUserReview">
+                  <div class="-bubbleBorder">
+                    <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                      <div class="fr-bff-product_reviewStars">
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                      </div>
+                      <div class="fr-bff-userReview_heading -bubbleTitle">Adoro queste canotte</div>
+                      <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Ho acquistato la prima in negozio, l'ho amata
+                        così tanto che sapevo di doverne avere altre. Ne ho ordinate altre due in colori diversi e ora
+                        sono le mie preferite. Sono fresche con il caldo e mi riscaldano quando fa freddo. In una
+                        parola: favolose.</div>
+                    </div>
+
+                  </div>
+                  <div class="fr-bff-userReview_user -userReview">
+                    <img class="-userIcon" alt="user"
+                      src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                    <div class="fr-bff-userReview_userGender">AnnMarieP</div>
+                    <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Regno Unito</div>
+                  </div>
+                </div>
+                <div class="swiper-slide -customUserReview">
+                  <div class="-bubbleBorder">
+                    <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                      <div class="fr-bff-product_reviewStars">
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                        <div class="fr-bff-product_reviewStar -active"></div>
+                      </div>
+                      <div class="fr-bff-userReview_heading -bubbleTitle">Ottima vestibilità</div>
+                      <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Ho comprato questa canotta in bianco e mi è
+                        piaciuta così tanto che l'ho comprata anche in nero e in beige.<br>È deliziosa, morbida ed
+                        elastica, infatti ha una buona vestibilità ed è comoda da indossare.</div>
+                    </div>
+                  </div>
+                  <div class="fr-bff-userReview_user -userReview">
+                    <img class="-userIcon" alt="user"
+                      src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                    <div class="fr-bff-userReview_userGender">Jacsmart</div>
+                    <!-- <div class="fr-bff-userReview_userAge">20 - 24</div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="fr-heading -h3 fr-sp-px-1g fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">
+              Prodotti correlati</h3>
+            $include('Page-RenderGrid', 'pids','464442|468737|465712|465708','count', 8 )$
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="js-trackEventReading" data-label="read_04"></div>
+    <!-- UV PROTECTION SILK BLEND -->
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_6">
+        <div class="-bgUvCut fr-sp-pb-xxl fr-pc-pb-xxl">
+          <div class="fr-pc-py-xxl fr-sp-py-xxl -bgUvCutStart u-align-center">
+            <h2 class="fr-heading -h2 fr-sp-px-1g">AIRIsm Protezione dagli UV (Misto Seta)</h2>
+            <p class="fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m">Un tessuto sottilissimo, dalla texture liscia e setosa, che
+              offre protezione solare immediata.</p>
+          </div>
+          <div class="pc-container -main ">
+
+
+            <div class="pc-container -main fr-sp-px-1g">
+              <div class="-sp-mx-auto u-pc-mr-auto u-pc-ml-auto -uvCutNew -bgRed fr-pc-mt-xxxl fr-sp-mt-xxxl">Novità
+              </div>
+              <h2 class="fr-heading -h2 fr-sp-mt-s fr-pc-mt-s u-align-center">T-shirt AIRism Misto Seta Protezione dagli
+                UV Girocollo Maniche Lunghe</h2>
+              <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Protegge busto e braccia dal sole.</p>
+
+              <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+                <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/crewneck_mv.jpg?20230213"
+                      alt="AIRism UV Protection Crew Neck Long Sleeve T-Shirt (Silk Blend)" data-expand="300">
+                  </picture>
+                </figure>
+
+                <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+                  <div class="fr-imagePlusText -w-100 -bgNone">
+                    <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                      <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                        <picture class="u-imgAdjustBox_inner">
+                          <img class="fr-img lazyload"
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/crewneck_features.jpg?20230213"
+                            alt="The soft, smooth texture of a silk blend" data-expand="300">
+                        </picture>
+                      </figure>
+                    </div>
+                    <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone"
+                      data-sku="464455">
+                      <a href="" data-product-url="">
+                        <p class="fr-imagePlusText_body fr-pc-mt-s">Incredibilmente morbida e liscia, grazie al tessuto
+                          in misto seta*.</p>
+                        <p class="-annotationEnContent fr-pc-mt-xxs fr-sp-mt-xxs">*Con il 7% di seta</p>
+                        <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                        <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">Prodotti in
+                evidenza</h3>
+              $include('Page-RenderGrid', 'pids','465787','count', 8 )$
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="js-trackEventReading" data-label="read_05"></div>
+
+    <!-- BRA & UNDERWEAR -->
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_7">
+        <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+          <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Canotte con Reggiseno & Slip</h2>
+          <div class="-flex-col -flex-col-center">
+            <div class="-lineUpRecomme">In Evidenza</div>
+          </div>
+
+          <h2 class="fr-heading -h2 fr-sp-mt-s fr-pc-mt-s u-align-center">Canotta AIRism</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Stile e comfort, tutto in uno.</p>
+
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/bracamisole_mv.jpg?20230213"
+                  alt="AIRism Bra Camisole" data-expand="300">
+              </picture>
+            </figure>
+
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/bracamisole_features.png?20230213"
+                        alt="AIRism material keeps you fresh and comfortable when you sweat." data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465708">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">AIRism assorbe il sudore e lascia traspirare la pelle
+                      per una sensazione di freschezza duratura.</p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                    <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+            Recensioni dei clienti</div>
+          <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+            data-pc-option="{&quot;spaceBetween&quot;: 24}"
+            data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide -customUserReview ">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">Ottimo prodotto</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Pratica ed elegante. Da indossare in qualunque
+                      momento.</div>
+                  </div>
+
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">federica70</div>
+                  <!-- <div class="fr-bff-userReview_userAge">35 - 44</div> -->
+                </div>
+
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">L'ho indossata immediatamente!</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Ho preso questa canotta nei colori bianco e
+                      bianco sporco. Entrambe sono perfette e super comode. Sono molto contenta di averle comprate!
+                    </div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Rjd91</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Regno Unito</div>
+                </div>
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">Super comoda!</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">L'ho comprata recentemente e ne sono così
+                      felice! Veste alla perfezione ed è super comoda.</div>
+                  </div>
+
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Anonimo</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Regno Unito</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SEAMLESS SHORTS -->
+    <section>
+      <div class="pc-container -main fr-pc-mt-xxxl fr-sp-mt-xxxl fr-sp-px-1g">
+        <h2 class="fr-heading -h2 u-align-center">Slip AIRism Senza Cuciture</h2>
+        <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">In morbido tessuto e con vestibilità confortevole.</p>
+
+        <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+          <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+            <picture class="u-imgAdjustBox_inner">
+              <img class="fr-img lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/seamlessshorts_mv.jpg?20230213"
+                alt="AIRism Ultra Seamless Shorts" data-expand="300">
+            </picture>
+          </figure>
+
+          <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+            <div class="fr-imagePlusText -w-100 -bgNone">
+              <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/seamlessshorts_features.jpg?20230213"
+                      alt="Seamless design stays hidden" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="464361">
+                <a href="" data-product-url="">
+                  <p class="fr-imagePlusText_body fr-pc-mt-s">Design discreto senza cuciture.</p>
+                  <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                  <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+          Recensioni dei clienti</div>
+        <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+          data-pc-option="{&quot;spaceBetween&quot;: 24}"
+          data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide -customUserReview ">
+
+              <div class="-bubbleBorder">
+
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Belli e comodi</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Ho acquistato due slip belli e molto comodi,
+                    senza etichette e cuciture che irritano la pelle, sottilissimi e con gli orli a vivo che non si
+                    arrotolano. Consigliatissimi.</div>
+                </div>
+
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">RemediosLaBella</div>
+              </div>
+            </div>
+            <div class="swiper-slide -customUserReview">
+              <div class="-bubbleBorder">
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Morbidi e comodi</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Questa biancheria intima è come una seconda
+                    pelle, molto confortevole!</div>
+                </div>
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">nadeenst</div>
+                <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Germania</div>
+              </div>
+            </div>
+            <div class="swiper-slide -customUserReview">
+              <div class="-bubbleBorder">
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Perfetti</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Li ho scelti per indossarli sotto i leggings per
+                    lo sport e sono davvero perfetti e invisibili.</div>
+                </div>
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">domvdo</div>
+
+                <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Francia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPS -->
+    <div class="js-trackEventReading" data-label="read_06"></div>
+
+    <!-- HOODIE -->
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_8">
+        <div class="pc-container -main fr-sp-px-1g u-align-center">
+          <h2 class="fr-pc-mt-xxl fr-pc-mb-xl fr-sp-mt-xxl fr-sp-mb-xl fr-heading -h2">Felpe & T-shirt</h2>
+          <h2 class="fr-heading -h2 u-align-center">Felpa AIRism Protezione dagli UV con Cappuccio e Zip</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">AIRism ti tiene fresca e asciutta, in più il tessuto
+            traspirante con protezione dagli UV integrata ti protegge dai raggi solari.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/meshparka_mv.jpg?20230213"
+                  alt="AIRism Mesh UV Protection Full-Zip Long-Sleeve Hoodie" data-expand="300">
+              </picture>
+            </figure>
+
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/meshparka_features.jpg?20230213"
+                        alt="UPF 50+*1, the maximum rating*2 in UV protective clothing." data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone u-align-left"
+                  data-sku="465748">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">Con UPF 50+*, il massimo livello di protezione UV** per
+                      i capi di abbigliamento.</p>
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">*UPF (Fattore di protezione dai raggi ultravioletti):
+                      indica il livello di protezione dai raggi UV.</p>
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">**La massima protezione dai raggi UV secondo le
+                      normative del paese di riferimento.</p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                    <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+            Recensioni dei clienti</div>
+          <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+            data-pc-option="{&quot;spaceBetween&quot;: 24}"
+            data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide -customUserReview ">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle u-align-left">Materiale morbido</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs u-align-left">Bella felpa con cappuccio da
+                      indossare quando non fa freddo. Il materiale è davvero stupendo.</div>
+                  </div>
+
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Anonimo</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Regno Unito</div>
+                </div>
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle u-align-left">Ideale per la palestra sopra un top
+                    </div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs u-align-left">Felpa leggera, morbida, tessuto
+                      traspirante, ideale nella fase di riscaldamento in palestra.</div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Anonimo</div>
+                  <!-- <div class="fr-bff-userReview_userAge">20 - 24</div> -->
+                </div>
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle u-align-left">Adatta per gli sport all'aperto
+                    </div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs u-align-left">Ne ho acquistate 3 e sono molto
+                      comode da indossare, sia in casa che all'aperto. Leggere e calde allo stesso tempo, sono facili da
+                      lavare e non hanno bisogno di essere stirate. Ideali per il golf.</div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Golfpassion76</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Francia</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COTTON S/S TSHIRT -->
+    <section>
+      <div class="pc-container -main fr-sp-mt-xxxl fr-pc-mt-xxxl fr-sp-px-1g">
+        <h2 class="fr-heading -h2 u-align-center">
+          T-shirt AIRism Cotone Girocollo
+        </h2>
+        <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">AIRism assorbe e lascia traspirare il sudore per una sensazione
+          di freschezza duratura.</p>
+        <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+          <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+            <picture class="u-imgAdjustBox_inner">
+              <img class="fr-img lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/cottont_mv.jpg?20230213"
+                alt="AIRism Cotton Short-Sleeve T-Shirt" data-expand="300">
+            </picture>
+          </figure>
+          <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+            <div class="fr-imagePlusText -w-100 -bgNone">
+              <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/cottont_features.jpg?20230213"
+                      alt="Great fabric and neckline for clean styling." data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465755">
+                <a href="" data-product-url="">
+                  <p class="fr-imagePlusText_body fr-pc-mt-s">Tessuto di qualità e colletto dal taglio pulito per uno
+                    stile curato.</p>
+                  <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                  <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+          Recensioni dei clienti</div>
+        <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+          data-pc-option="{&quot;spaceBetween&quot;: 24}"
+          data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide -customUserReview ">
+              <div class="-bubbleBorder">
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Super comoda e morbida</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Questa t-shirt è un must have. Ottimo design,
+                    materiale fantastico (così morbido e delicato) e incredibilmente comodo. Bella gamma di colori tra
+                    cui scegliere. La consiglio assolutamente!</div>
+                </div>
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">Anonimo</div>
+                <!-- <div class="fr-bff-userReview_userAge">25 - 34</div> -->
+              </div>
+            </div>
+            <div class="swiper-slide -customUserReview">
+              <div class="-bubbleBorder">
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Perfetta</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Adoro il tessuto! Vestibilità ottima, taglio
+                    perfetto. Molto facile da curare.</div>
+                </div>
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">Symatdu</div>
+                <!-- <div class="fr-bff-userReview_userAge">45 - 54</div> -->
+              </div>
+            </div>
+            <div class="swiper-slide -customUserReview">
+              <div class="-bubbleBorder">
+                <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                  <div class="fr-bff-product_reviewStars">
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                    <div class="fr-bff-product_reviewStar -active"></div>
+                  </div>
+                  <div class="fr-bff-userReview_heading -bubbleTitle">Ottimo taglio</div>
+                  <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Materiale e lavorazione super, diventerà uno dei
+                    miei pezzi preferiti.</div>
+                </div>
+              </div>
+              <div class="fr-bff-userReview_user -userReview">
+                <img class="-userIcon" alt="user"
+                  src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                <div class="fr-bff-userReview_userGender">Biggie</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">Prodotti correlati
+          </h3>
+
+          $include('Page-RenderGrid', 'pids','466587|465762|466581|468584|465757','count', 8 )$
+
+
+
+        </div>
+      </div>
+    </section>
+    <div class="js-trackEventReading" data-label="read_07"></div>
+
+    <!-- BOTTOMS -->
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_9">
+        <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+          <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Pantaloni, Leggings &amp; Shorts</h2>
+          <h2 class="fr-heading -h2 u-align-center">Pantaloni Tuta Joggers Ultra Elasticizzati AIRism</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Design minimal che unisce stile e comfort, grazie al tessuto
+            elasticizzato e traspirante.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/jogger_mv.jpg?20230213"
+                  alt="Ultra Stretch AIRism Jogger Pants" data-expand="300">
+              </picture>
+            </figure>
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/jogger_features.jpg?20230213"
+                        alt="AIRism keeps you fresh and comfortable when you sweat." data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="465784">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">AIRism ti tiene fresca e asciutta. Inoltre questo
+                      materiale è progettato per estendersi in tutte le direzioni per muoverti in totale libertà.</p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                    <div class="-bff-custom fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fr-heading -h4 u-align-center fr-pc-mt-xxl fr-sp-mt-xxl fr-sp-mb-m fr-pc-mb-m -userReviewSize">
+            Recensioni dei clienti</div>
+          <div class="swiper-container js-carousel" data-reviews-length="3" data-pc-panel="3" data-sp-panel="1.1"
+            data-pc-option="{&quot;spaceBetween&quot;: 24}"
+            data-sp-option="{&quot;spaceBetween&quot;: 15, &quot;centerInsufficientSlides&quot;: true}">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide -customUserReview ">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">Un passe-partout</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Appena preso il terzo paio. Un paio all’anno e
+                      faccio tutta la primavera, estate e autunno. Tessuto meraviglioso. Cadono benissimo e con i giusti
+                      accessori sono eleganti e sportivi al tempo stesso!</div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Liu 22</div>
+                </div>
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">Articolo molto bello e materiale molto bello
+                    </div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Perfetti in ogni situazione, taglio bellissimo
+                      e molto comodi da indossare.</div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">ohoh</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Francia</div>
+                </div>
+              </div>
+              <div class="swiper-slide -customUserReview">
+                <div class="-bubbleBorder">
+                  <div class="-bubble -flex-col fr-sp-px-1g fr-sp-py-l fr-pc-px-m fr-pc-py-l">
+                    <div class="fr-bff-product_reviewStars">
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                      <div class="fr-bff-product_reviewStar -active"></div>
+                    </div>
+                    <div class="fr-bff-userReview_heading -bubbleTitle">I miei joggers preferiti!</div>
+                    <div class="-bubbleContents fr-sp-mt-xs fr-pc-mt-xs">Joggers perfetti sotto tutti i punti di vista:
+                      il tessuto si asciuga rapidamente, il colore nero è molto saturo e la lunghezza per i miei 162 cm
+                      è semplicemente perfetta! Mi piace anche il fatto che possano essere abbinati a una camicia con
+                      colletto, risultando super eleganti. Consiglio vivamente!</div>
+                  </div>
+                </div>
+                <div class="fr-bff-userReview_user -userReview">
+                  <img class="-userIcon" alt="user"
+                    src="https://www.uniqlo.com/jp/ja/special-feature/airism/24ss/icon/men.svg">
+                  <div class="fr-bff-userReview_userGender">Anonimo</div>
+                  <div class="fr-bff-userReview_userAge">Recensione originale pubblicata su UNIQLO Regno Unito</div>
+                </div>
+              </div>
+            </div>
+            <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">Prodotti in
+              evidenza</h3>
+            $include('Page-RenderGrid', 'pids','465789|468805|466588|465790|471902','count', 8 )$
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRESSES -->
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_10">
+        <div class="pc-container -main fr-sp-px-1g fr-pc-mt-xxxl fr-sp-mt-xxxl">
+          <h2 class="fr-heading -h2 fr-pc-mb-xl fr-sp-mb-xl u-align-center">Vestiti</h2>
+          <h2 class="fr-heading -h2 u-align-center">Vestito Corto AIRism Cotone Maniche Corte</h2>
+          <p class="fr-sp-mt-m fr-pc-mt-m u-align-center">Un vestito fresco con silhouette ad A pensato per il tuo
+            comfort.</p>
+          <div class="fr-pc-mt-m fr-sp-mt-m -pc-flex-row -pc-flex-row-center -flex-col-center -pc-gap-24 ">
+            <figure class="u-imgAdjustBox u-pc-w576" data-aspect-ratio="1:1">
+              <picture class="u-imgAdjustBox_inner">
+                <img class="fr-img lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/onepiece_mv.jpg?20230213"
+                  alt="AIRism Cotton Short Sleeve T-Shirt Dress" data-expand="300">
+              </picture>
+            </figure>
+            <div class="u-pc-w576 fr-imagePlusTextParent -relative fr-sp-mt-xl">
+              <div class="fr-imagePlusText -w-100 -bgNone">
+                <div class="fr-imagePlusText_imgWrap -w-100 -pc-w-186 -sp-w-120">
+                  <figure class="u-imgAdjustBox -sp-w-120" data-aspect-ratio="1:1">
+                    <picture class="u-imgAdjustBox_inner">
+                      <img class="fr-img lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_women/onepiece_features.jpg?20230213"
+                        alt="With the look of cotton, AIRism keeps you fresh and comfortable when you sweat. "
+                        data-expand="300">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="fr-imagePlusText_content fr-pc-pl-m u-sp-pr-none u-pc-pr-none -bgNone" data-sku="464784">
+                  <a href="" data-product-url="">
+                    <p class="fr-imagePlusText_body fr-pc-mt-s">AIRism assorbe e lascia traspirare il sudore per una
+                      sensazione di freschezza duratura.</p>
+                    <p class="fr-bff-product_gender -genderSize fr-sp-mt-s fr-pc-mt-s">DONNA</p>
+                    <div class="-bff-custom -bgNone fr-bff-products js-fr-bff-products" data-product-price=""></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="fr-heading -h3 fr-sp-mt-xxl fr-pc-mt-xxl fr-sp-mb-m fr-pc-mb-m u-align-center">Prodotti correlati
+          </h3>
+          $include('Page-RenderGrid', 'pids','464788|464785|466466','count', 8 )$
+        </div>
+      </div>
+    </section>
+
+
+    <div class="fr-sp-px-1g fr-sp-mt-xxxl fr-pc-mt-xxxl">
+      <a class="js-trackEvent fr-linkButton js-trackEvent -white -m"
+        href="$httpsUrl('Search-Show','cgid','IDwf-airism')$" data-label="All_AIRism_w">
+        ALL PRODUCTS
+      </a>
+    </div>
+    <div class="js-trackEventReading" data-label="read_08"></div>
+    <section>
+      <div class="u-fixedAnchorAdjust js-fixedAnchor_12">
+        <div class="pc-container -main">
+          <h2 class="fr-heading -h2 fr-sp-px-1g u-align-center fr-sp-pt-xxxl fr-pc-pt-xxxl">Caratteristiche</h2>
+          <h3 class="fr-heading -h5 fr-sp-px-1g fr-sp-mt-m fr-pc-mt-m u-align-center">Scopri i segreti dell'incredibile
+            comodità di AIRism.</h3>
+          <div class="u-align-center u-color-gray500 fr-sp-mx-1g fr-sp-mt-s fr-pc-mt-s">*Le funzionalità variano a
+            seconda dei prodotti.</div>
+
+          <div class="-grid -sp-flex-col -sp-gap-15 -pc-gap-24 -pc-row-gap-20 fr-sp-mx-1g fr-sp-mt-xxl fr-pc-mt-xxl">
+            <div class="-flex-row -sp-gap-15">
+              <div class="-pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function01.jpg?20230213"
+                      alt="DRY" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-pc-ml-m">
+                <p class="fr-pc-mt-s u-font-700">DRY:</p>
+                <p class="fr-sp-mt-s fr-pc-mt-s">Permette al sudore di asciugarsi rapidamente e al tessuto di rimanere
+                  fresco e asciutto.</p>
+                <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">Sinistra: Cotone. Destra: AIRism</div>
+              </div>
+            </div>
+            <div class="-flex-row -sp-gap-15">
+              <div class="-pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function02.jpg?20230213"
+                      alt="SMOOTH TO THE TOUCH" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-pc-ml-m">
+                <p class="fr-pc-mt-s u-font-700">TEXTURE LISCIA E SETOSA:</p>
+                <p class="fr-sp-mt-s fr-pc-mt-s">Le fibre ultrafini asciugano l'umidità all'istante.</p>
+                <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">Sinistra: Cotone. Destra: AIRism</div>
+              </div>
+            </div>
+            <div class="-flex-row -sp-gap-15">
+              <div class="-pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function03.jpg?20230213"
+                      alt="STRETCH" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-pc-ml-m">
+                <p class="fr-pc-mt-s u-font-700">TESSUTO ELASTICIZZATO:</p>
+                <p class="fr-sp-mt-s fr-pc-mt-s">La capacità di estensione in orizzontale e in verticale assicura
+                  elasticità, senza che il capo perda la sua forma.</p>
+              </div>
+            </div>
+            <div class="-flex-row -sp-gap-15">
+              <div class="-pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function04.jpg?20230213"
+                      alt="COOL TOUCH" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-pc-ml-m">
+                <p class="fr-pc-mt-s u-font-700">COOL TOUCH:</p>
+                <p class="fr-sp-mt-s fr-pc-mt-s">Il tessuto setoso consente al calore del corpo di disperdersi in
+                  fretta.</p>
+              </div>
+            </div>
+            <div class="-flex-row -sp-gap-15">
+              <div class="-pc-w-186 -sp-w-120">
+                <figure class="u-imgAdjustBox" data-aspect-ratio="1:1">
+                  <picture class="u-imgAdjustBox_inner">
+                    <img class="fr-img lazyload"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/airism/24ss/img/img_common/function05.jpg?20230213"
+                      alt="DEODORIZING" data-expand="300">
+                  </picture>
+                </figure>
+              </div>
+              <div class="fr-pc-ml-m">
+                <p class="fr-pc-mt-s u-font-700">ANTIODORE</p>
+                <p class="fr-sp-mt-s fr-pc-mt-s">AIRism assorbe e neutralizza l'insorgere dei cattivi odori.</p>
+                <div class="-annotationEnContent fr-sp-mt-xs fr-pc-mt-s">*Efficace contro l'odore di ammoniaca,
+                  componente principale del sudore.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
